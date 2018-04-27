@@ -1,8 +1,9 @@
 # Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Comp 781 Project
 
-## How to use Hindsight Experience Replay
+## How to use Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Setup using OpenAI gyms. There are many tutorials online that will do a lot better than me.
+Then you can clone this repo and use the code I added to the baselines they provided. 
 
 ### Getting started
 Training an agent is very simple:
@@ -37,7 +38,9 @@ https://youtu.be/7k19-bpJLTA
 ### Code
 I initially created my own implementation of DDPG, HER, and added HRL to it. 
 In order to evaluate it fairly I decided to use the baseline HER as the foundation to my method, and then adding changes to various places in order to implement HRL as well. 
+This allowed me to use their logger, which was very helpful in creating the graphs. 
 
 The code I modified are in baselines/baselines/herhrl/
 More specifically I modified the replay_buffer.py, rollout.py, her.py, ddpg.py, and actor_critic.py.
+I
 
