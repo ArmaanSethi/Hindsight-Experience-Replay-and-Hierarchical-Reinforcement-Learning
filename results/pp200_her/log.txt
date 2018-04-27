@@ -1,0 +1,2503 @@
+Logging to pptest500
+T: 50
+_Q_lr: 0.001
+_action_l2: 1.0
+_batch_size: 256
+_buffer_size: 1000000
+_clip_obs: 200.0
+_hidden: 256
+_layers: 3
+_max_u: 1.0
+_network_class: baselines.her.actor_critic:ActorCritic
+_norm_clip: 5
+_norm_eps: 0.01
+_pi_lr: 0.001
+_polyak: 0.95
+_relative_goals: False
+_scope: ddpg
+ddpg_params: {'buffer_size': 1000000, 'hidden': 256, 'layers': 3, 'network_class': 'baselines.her.actor_critic:ActorCritic', 'polyak': 0.95, 'batch_size': 256, 'Q_lr': 0.001, 'pi_lr': 0.001, 'norm_eps': 0.01, 'norm_clip': 5, 'max_u': 1.0, 'action_l2': 1.0, 'clip_obs': 200.0, 'scope': 'ddpg', 'relative_goals': False}
+env_name: FetchPickAndPlace-v0
+gamma: 0.98
+make_env: <function prepare_params.<locals>.make_env at 0x1c1e372e18>
+n_batches: 40
+n_cycles: 50
+n_test_rollouts: 10
+noise_eps: 0.2
+random_eps: 0.3
+replay_k: 4
+replay_strategy: future
+rollout_batch_size: 2
+test_with_polyak: False
+Creating a DDPG agent with action space 4 x 1.0...
+Training...
+-----------------------------------
+| epoch              | 0          |
+| stats_g/mean       | 0.84372395 |
+| stats_g/std        | 0.08991211 |
+| stats_o/mean       | 0.20336546 |
+| stats_o/std        | 0.04702816 |
+| test/episode       | 20.0       |
+| test/mean_Q        | -2.8218293 |
+| test/success_rate  | 0.0        |
+| train/episode      | 100.0      |
+| train/success_rate | 0.025      |
+-----------------------------------
+New best success rate: 0.0. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_0.pkl ...
+--------------------------------------------
+| epoch              | 1                   |
+| stats_g/mean       | 0.8473281           |
+| stats_g/std        | 0.09121593          |
+| stats_o/mean       | 0.20435008          |
+| stats_o/std        | 0.049745284         |
+| test/episode       | 40.0                |
+| test/mean_Q        | -4.467577           |
+| test/success_rate  | 0.07500000000000001 |
+| train/episode      | 200.0               |
+| train/success_rate | 0.055               |
+--------------------------------------------
+New best success rate: 0.07500000000000001. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 2           |
+| stats_g/mean       | 0.8476991   |
+| stats_g/std        | 0.09250671  |
+| stats_o/mean       | 0.20449068  |
+| stats_o/std        | 0.049355913 |
+| test/episode       | 60.0        |
+| test/mean_Q        | -6.1148806  |
+| test/success_rate  | 0.025       |
+| train/episode      | 300.0       |
+| train/success_rate | 0.035       |
+------------------------------------
+------------------------------------
+| epoch              | 3           |
+| stats_g/mean       | 0.84840375  |
+| stats_g/std        | 0.09305987  |
+| stats_o/mean       | 0.2046147   |
+| stats_o/std        | 0.049045652 |
+| test/episode       | 80.0        |
+| test/mean_Q        | -7.9930177  |
+| test/success_rate  | 0.0         |
+| train/episode      | 400.0       |
+| train/success_rate | 0.045       |
+------------------------------------
+------------------------------------
+| epoch              | 4           |
+| stats_g/mean       | 0.8479739   |
+| stats_g/std        | 0.092196815 |
+| stats_o/mean       | 0.20462814  |
+| stats_o/std        | 0.049571875 |
+| test/episode       | 100.0       |
+| test/mean_Q        | -9.69396    |
+| test/success_rate  | 0.025       |
+| train/episode      | 500.0       |
+| train/success_rate | 0.025       |
+------------------------------------
+--------------------------------------------
+| epoch              | 5                   |
+| stats_g/mean       | 0.8470855           |
+| stats_g/std        | 0.091863476         |
+| stats_o/mean       | 0.20436224          |
+| stats_o/std        | 0.049003206         |
+| test/episode       | 120.0               |
+| test/mean_Q        | -12.52678           |
+| test/success_rate  | 0.0                 |
+| train/episode      | 600.0               |
+| train/success_rate | 0.05500000000000001 |
+--------------------------------------------
+Saving periodic policy to pptest500/policy_5.pkl ...
+-----------------------------------
+| epoch              | 6          |
+| stats_g/mean       | 0.84683347 |
+| stats_g/std        | 0.09286102 |
+| stats_o/mean       | 0.20408781 |
+| stats_o/std        | 0.05110392 |
+| test/episode       | 140.0      |
+| test/mean_Q        | -13.627179 |
+| test/success_rate  | 0.025      |
+| train/episode      | 700.0      |
+| train/success_rate | 0.03       |
+-----------------------------------
+------------------------------------
+| epoch              | 7           |
+| stats_g/mean       | 0.84661645  |
+| stats_g/std        | 0.09318853  |
+| stats_o/mean       | 0.20408812  |
+| stats_o/std        | 0.053530246 |
+| test/episode       | 160.0       |
+| test/mean_Q        | -13.9888935 |
+| test/success_rate  | 0.1         |
+| train/episode      | 800.0       |
+| train/success_rate | 0.035       |
+------------------------------------
+New best success rate: 0.1. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 8           |
+| stats_g/mean       | 0.8461444   |
+| stats_g/std        | 0.09461683  |
+| stats_o/mean       | 0.203719    |
+| stats_o/std        | 0.055672895 |
+| test/episode       | 180.0       |
+| test/mean_Q        | -14.879019  |
+| test/success_rate  | 0.075       |
+| train/episode      | 900.0       |
+| train/success_rate | 0.02        |
+------------------------------------
+--------------------------------------------
+| epoch              | 9                   |
+| stats_g/mean       | 0.84605557          |
+| stats_g/std        | 0.095091335         |
+| stats_o/mean       | 0.20364946          |
+| stats_o/std        | 0.0580747           |
+| test/episode       | 200.0               |
+| test/mean_Q        | -15.217035          |
+| test/success_rate  | 0.07500000000000001 |
+| train/episode      | 1000.0              |
+| train/success_rate | 0.05                |
+--------------------------------------------
+------------------------------------
+| epoch              | 10          |
+| stats_g/mean       | 0.8461492   |
+| stats_g/std        | 0.0953604   |
+| stats_o/mean       | 0.2037402   |
+| stats_o/std        | 0.058135413 |
+| test/episode       | 220.0       |
+| test/mean_Q        | -17.532085  |
+| test/success_rate  | 0.1         |
+| train/episode      | 1100.0      |
+| train/success_rate | 0.045       |
+------------------------------------
+New best success rate: 0.1. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_10.pkl ...
+------------------------------------
+| epoch              | 11          |
+| stats_g/mean       | 0.8462913   |
+| stats_g/std        | 0.095919736 |
+| stats_o/mean       | 0.20379514  |
+| stats_o/std        | 0.06068735  |
+| test/episode       | 240.0       |
+| test/mean_Q        | -19.834923  |
+| test/success_rate  | 0.0         |
+| train/episode      | 1200.0      |
+| train/success_rate | 0.05        |
+------------------------------------
+--------------------------------------------
+| epoch              | 12                  |
+| stats_g/mean       | 0.8461423           |
+| stats_g/std        | 0.09580212          |
+| stats_o/mean       | 0.20381837          |
+| stats_o/std        | 0.061212454         |
+| test/episode       | 260.0               |
+| test/mean_Q        | -20.070492          |
+| test/success_rate  | 0.0                 |
+| train/episode      | 1300.0              |
+| train/success_rate | 0.07500000000000001 |
+--------------------------------------------
+--------------------------------------------
+| epoch              | 13                  |
+| stats_g/mean       | 0.84621763          |
+| stats_g/std        | 0.09628973          |
+| stats_o/mean       | 0.20392947          |
+| stats_o/std        | 0.061804153         |
+| test/episode       | 280.0               |
+| test/mean_Q        | -20.19325           |
+| test/success_rate  | 0.07500000000000001 |
+| train/episode      | 1400.0              |
+| train/success_rate | 0.045               |
+--------------------------------------------
+-----------------------------------
+| epoch              | 14         |
+| stats_g/mean       | 0.8464174  |
+| stats_g/std        | 0.09595403 |
+| stats_o/mean       | 0.20410335 |
+| stats_o/std        | 0.06273237 |
+| test/episode       | 300.0      |
+| test/mean_Q        | -19.395065 |
+| test/success_rate  | 0.2        |
+| train/episode      | 1500.0     |
+| train/success_rate | 0.06       |
+-----------------------------------
+New best success rate: 0.2. Saving policy to pptest500/policy_best.pkl ...
+--------------------------------------------
+| epoch              | 15                  |
+| stats_g/mean       | 0.8461363           |
+| stats_g/std        | 0.09630472          |
+| stats_o/mean       | 0.20407452          |
+| stats_o/std        | 0.06417825          |
+| test/episode       | 320.0               |
+| test/mean_Q        | -21.921734          |
+| test/success_rate  | 0.05                |
+| train/episode      | 1600.0              |
+| train/success_rate | 0.07500000000000001 |
+--------------------------------------------
+Saving periodic policy to pptest500/policy_15.pkl ...
+-----------------------------------
+| epoch              | 16         |
+| stats_g/mean       | 0.8463981  |
+| stats_g/std        | 0.09631445 |
+| stats_o/mean       | 0.20414054 |
+| stats_o/std        | 0.0649323  |
+| test/episode       | 340.0      |
+| test/mean_Q        | -21.871658 |
+| test/success_rate  | 0.075      |
+| train/episode      | 1700.0     |
+| train/success_rate | 0.05       |
+-----------------------------------
+------------------------------------
+| epoch              | 17          |
+| stats_g/mean       | 0.84601575  |
+| stats_g/std        | 0.09725175  |
+| stats_o/mean       | 0.20399638  |
+| stats_o/std        | 0.066644676 |
+| test/episode       | 360.0       |
+| test/mean_Q        | -22.673687  |
+| test/success_rate  | 0.05        |
+| train/episode      | 1800.0      |
+| train/success_rate | 0.08        |
+------------------------------------
+------------------------------------
+| epoch              | 18          |
+| stats_g/mean       | 0.84582233  |
+| stats_g/std        | 0.098086916 |
+| stats_o/mean       | 0.20405355  |
+| stats_o/std        | 0.068166696 |
+| test/episode       | 380.0       |
+| test/mean_Q        | -21.417427  |
+| test/success_rate  | 0.05        |
+| train/episode      | 1900.0      |
+| train/success_rate | 0.02        |
+------------------------------------
+--------------------------------------------
+| epoch              | 19                  |
+| stats_g/mean       | 0.84572154          |
+| stats_g/std        | 0.09835514          |
+| stats_o/mean       | 0.20397659          |
+| stats_o/std        | 0.07004144          |
+| test/episode       | 400.0               |
+| test/mean_Q        | -21.684002          |
+| test/success_rate  | 0.125               |
+| train/episode      | 2000.0              |
+| train/success_rate | 0.07500000000000001 |
+--------------------------------------------
+-----------------------------------
+| epoch              | 20         |
+| stats_g/mean       | 0.845843   |
+| stats_g/std        | 0.0981519  |
+| stats_o/mean       | 0.20405155 |
+| stats_o/std        | 0.0709484  |
+| test/episode       | 420.0      |
+| test/mean_Q        | -21.57331  |
+| test/success_rate  | 0.05       |
+| train/episode      | 2100.0     |
+| train/success_rate | 0.07       |
+-----------------------------------
+Saving periodic policy to pptest500/policy_20.pkl ...
+------------------------------------
+| epoch              | 21          |
+| stats_g/mean       | 0.8460505   |
+| stats_g/std        | 0.098489046 |
+| stats_o/mean       | 0.20415618  |
+| stats_o/std        | 0.072715804 |
+| test/episode       | 440.0       |
+| test/mean_Q        | -23.014626  |
+| test/success_rate  | 0.05        |
+| train/episode      | 2200.0      |
+| train/success_rate | 0.06        |
+------------------------------------
+--------------------------------------------
+| epoch              | 22                  |
+| stats_g/mean       | 0.8460303           |
+| stats_g/std        | 0.09840187          |
+| stats_o/mean       | 0.20422037          |
+| stats_o/std        | 0.07363139          |
+| test/episode       | 460.0               |
+| test/mean_Q        | -17.84962           |
+| test/success_rate  | 0.32499999999999996 |
+| train/episode      | 2300.0              |
+| train/success_rate | 0.1                 |
+--------------------------------------------
+New best success rate: 0.32499999999999996. Saving policy to pptest500/policy_best.pkl ...
+--------------------------------------------
+| epoch              | 23                  |
+| stats_g/mean       | 0.84603304          |
+| stats_g/std        | 0.09838084          |
+| stats_o/mean       | 0.20420478          |
+| stats_o/std        | 0.07393239          |
+| test/episode       | 480.0               |
+| test/mean_Q        | -22.402561          |
+| test/success_rate  | 0.15                |
+| train/episode      | 2400.0              |
+| train/success_rate | 0.11499999999999999 |
+--------------------------------------------
+------------------------------------
+| epoch              | 24          |
+| stats_g/mean       | 0.84570485  |
+| stats_g/std        | 0.09899416  |
+| stats_o/mean       | 0.20418732  |
+| stats_o/std        | 0.075345814 |
+| test/episode       | 500.0       |
+| test/mean_Q        | -22.704285  |
+| test/success_rate  | 0.125       |
+| train/episode      | 2500.0      |
+| train/success_rate | 0.11        |
+------------------------------------
+--------------------------------------------
+| epoch              | 25                  |
+| stats_g/mean       | 0.84560007          |
+| stats_g/std        | 0.09944884          |
+| stats_o/mean       | 0.2042153           |
+| stats_o/std        | 0.0766042           |
+| test/episode       | 520.0               |
+| test/mean_Q        | -21.692245          |
+| test/success_rate  | 0.15000000000000002 |
+| train/episode      | 2600.0              |
+| train/success_rate | 0.085               |
+--------------------------------------------
+Saving periodic policy to pptest500/policy_25.pkl ...
+--------------------------------------------
+| epoch              | 26                  |
+| stats_g/mean       | 0.845795            |
+| stats_g/std        | 0.09941883          |
+| stats_o/mean       | 0.20426364          |
+| stats_o/std        | 0.077707045         |
+| test/episode       | 540.0               |
+| test/mean_Q        | -23.649902          |
+| test/success_rate  | 0.1                 |
+| train/episode      | 2700.0              |
+| train/success_rate | 0.08499999999999999 |
+--------------------------------------------
+------------------------------------
+| epoch              | 27          |
+| stats_g/mean       | 0.8457646   |
+| stats_g/std        | 0.099564455 |
+| stats_o/mean       | 0.20417255  |
+| stats_o/std        | 0.07942703  |
+| test/episode       | 560.0       |
+| test/mean_Q        | -20.379906  |
+| test/success_rate  | 0.175       |
+| train/episode      | 2800.0      |
+| train/success_rate | 0.11        |
+------------------------------------
+------------------------------------
+| epoch              | 28          |
+| stats_g/mean       | 0.84589887  |
+| stats_g/std        | 0.100040115 |
+| stats_o/mean       | 0.20430237  |
+| stats_o/std        | 0.081019334 |
+| test/episode       | 580.0       |
+| test/mean_Q        | -19.677992  |
+| test/success_rate  | 0.2         |
+| train/episode      | 2900.0      |
+| train/success_rate | 0.13        |
+------------------------------------
+------------------------------------
+| epoch              | 29          |
+| stats_g/mean       | 0.8460248   |
+| stats_g/std        | 0.1002369   |
+| stats_o/mean       | 0.20437764  |
+| stats_o/std        | 0.082060166 |
+| test/episode       | 600.0       |
+| test/mean_Q        | -16.694822  |
+| test/success_rate  | 0.3         |
+| train/episode      | 3000.0      |
+| train/success_rate | 0.11        |
+------------------------------------
+-----------------------------------
+| epoch              | 30         |
+| stats_g/mean       | 0.8459535  |
+| stats_g/std        | 0.10045153 |
+| stats_o/mean       | 0.20443474 |
+| stats_o/std        | 0.08335522 |
+| test/episode       | 620.0      |
+| test/mean_Q        | -23.585598 |
+| test/success_rate  | 0.125      |
+| train/episode      | 3100.0     |
+| train/success_rate | 0.14       |
+-----------------------------------
+Saving periodic policy to pptest500/policy_30.pkl ...
+-----------------------------------
+| epoch              | 31         |
+| stats_g/mean       | 0.84585446 |
+| stats_g/std        | 0.10090607 |
+| stats_o/mean       | 0.20442685 |
+| stats_o/std        | 0.08418005 |
+| test/episode       | 640.0      |
+| test/mean_Q        | -21.762299 |
+| test/success_rate  | 0.175      |
+| train/episode      | 3200.0     |
+| train/success_rate | 0.19       |
+-----------------------------------
+--------------------------------------------
+| epoch              | 32                  |
+| stats_g/mean       | 0.8456967           |
+| stats_g/std        | 0.10097762          |
+| stats_o/mean       | 0.20439051          |
+| stats_o/std        | 0.085207134         |
+| test/episode       | 660.0               |
+| test/mean_Q        | -19.109325          |
+| test/success_rate  | 0.225               |
+| train/episode      | 3300.0              |
+| train/success_rate | 0.14500000000000002 |
+--------------------------------------------
+------------------------------------
+| epoch              | 33          |
+| stats_g/mean       | 0.8457052   |
+| stats_g/std        | 0.101217784 |
+| stats_o/mean       | 0.20440777  |
+| stats_o/std        | 0.086441986 |
+| test/episode       | 680.0       |
+| test/mean_Q        | -24.755943  |
+| test/success_rate  | 0.125       |
+| train/episode      | 3400.0      |
+| train/success_rate | 0.18        |
+------------------------------------
+-----------------------------------
+| epoch              | 34         |
+| stats_g/mean       | 0.8456815  |
+| stats_g/std        | 0.10162858 |
+| stats_o/mean       | 0.204497   |
+| stats_o/std        | 0.08743436 |
+| test/episode       | 700.0      |
+| test/mean_Q        | -17.352283 |
+| test/success_rate  | 0.25       |
+| train/episode      | 3500.0     |
+| train/success_rate | 0.17       |
+-----------------------------------
+--------------------------------------------
+| epoch              | 35                  |
+| stats_g/mean       | 0.8456395           |
+| stats_g/std        | 0.10150299          |
+| stats_o/mean       | 0.20441194          |
+| stats_o/std        | 0.08856317          |
+| test/episode       | 720.0               |
+| test/mean_Q        | -23.277443          |
+| test/success_rate  | 0.175               |
+| train/episode      | 3600.0              |
+| train/success_rate | 0.22000000000000003 |
+--------------------------------------------
+Saving periodic policy to pptest500/policy_35.pkl ...
+-----------------------------------
+| epoch              | 36         |
+| stats_g/mean       | 0.8456869  |
+| stats_g/std        | 0.10166342 |
+| stats_o/mean       | 0.204398   |
+| stats_o/std        | 0.08924171 |
+| test/episode       | 740.0      |
+| test/mean_Q        | -18.072119 |
+| test/success_rate  | 0.4        |
+| train/episode      | 3700.0     |
+| train/success_rate | 0.185      |
+-----------------------------------
+New best success rate: 0.4. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 37          |
+| stats_g/mean       | 0.84554577  |
+| stats_g/std        | 0.10177366  |
+| stats_o/mean       | 0.20430681  |
+| stats_o/std        | 0.090103455 |
+| test/episode       | 760.0       |
+| test/mean_Q        | -19.305841  |
+| test/success_rate  | 0.3         |
+| train/episode      | 3800.0      |
+| train/success_rate | 0.185       |
+------------------------------------
+--------------------------------------------
+| epoch              | 38                  |
+| stats_g/mean       | 0.8453645           |
+| stats_g/std        | 0.101979375         |
+| stats_o/mean       | 0.20424521          |
+| stats_o/std        | 0.09107218          |
+| test/episode       | 780.0               |
+| test/mean_Q        | -18.811121          |
+| test/success_rate  | 0.4                 |
+| train/episode      | 3900.0              |
+| train/success_rate | 0.22999999999999998 |
+--------------------------------------------
+New best success rate: 0.4. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 39         |
+| stats_g/mean       | 0.84528494 |
+| stats_g/std        | 0.1023348  |
+| stats_o/mean       | 0.2042431  |
+| stats_o/std        | 0.09203978 |
+| test/episode       | 800.0      |
+| test/mean_Q        | -16.11064  |
+| test/success_rate  | 0.525      |
+| train/episode      | 4000.0     |
+| train/success_rate | 0.22       |
+-----------------------------------
+New best success rate: 0.525. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 40         |
+| stats_g/mean       | 0.84542227 |
+| stats_g/std        | 0.10241532 |
+| stats_o/mean       | 0.20427501 |
+| stats_o/std        | 0.09253685 |
+| test/episode       | 820.0      |
+| test/mean_Q        | -19.27361  |
+| test/success_rate  | 0.35       |
+| train/episode      | 4100.0     |
+| train/success_rate | 0.245      |
+-----------------------------------
+Saving periodic policy to pptest500/policy_40.pkl ...
+-----------------------------------
+| epoch              | 41         |
+| stats_g/mean       | 0.84541845 |
+| stats_g/std        | 0.10241672 |
+| stats_o/mean       | 0.20430952 |
+| stats_o/std        | 0.09340501 |
+| test/episode       | 840.0      |
+| test/mean_Q        | -16.924936 |
+| test/success_rate  | 0.475      |
+| train/episode      | 4200.0     |
+| train/success_rate | 0.235      |
+-----------------------------------
+--------------------------------------------
+| epoch              | 42                  |
+| stats_g/mean       | 0.84550875          |
+| stats_g/std        | 0.102327354         |
+| stats_o/mean       | 0.20434044          |
+| stats_o/std        | 0.09446924          |
+| test/episode       | 860.0               |
+| test/mean_Q        | -20.066029          |
+| test/success_rate  | 0.325               |
+| train/episode      | 4300.0              |
+| train/success_rate | 0.28500000000000003 |
+--------------------------------------------
+--------------------------------------------
+| epoch              | 43                  |
+| stats_g/mean       | 0.8455363           |
+| stats_g/std        | 0.10256869          |
+| stats_o/mean       | 0.20430678          |
+| stats_o/std        | 0.09526651          |
+| test/episode       | 880.0               |
+| test/mean_Q        | -14.470192          |
+| test/success_rate  | 0.525               |
+| train/episode      | 4400.0              |
+| train/success_rate | 0.20500000000000002 |
+--------------------------------------------
+New best success rate: 0.525. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 44          |
+| stats_g/mean       | 0.84536046  |
+| stats_g/std        | 0.102577455 |
+| stats_o/mean       | 0.20431319  |
+| stats_o/std        | 0.095697746 |
+| test/episode       | 900.0       |
+| test/mean_Q        | -22.464195  |
+| test/success_rate  | 0.375       |
+| train/episode      | 4500.0      |
+| train/success_rate | 0.265       |
+------------------------------------
+------------------------------------
+| epoch              | 45          |
+| stats_g/mean       | 0.84544015  |
+| stats_g/std        | 0.10253205  |
+| stats_o/mean       | 0.20433366  |
+| stats_o/std        | 0.096534275 |
+| test/episode       | 920.0       |
+| test/mean_Q        | -21.950933  |
+| test/success_rate  | 0.325       |
+| train/episode      | 4600.0      |
+| train/success_rate | 0.275       |
+------------------------------------
+Saving periodic policy to pptest500/policy_45.pkl ...
+--------------------------------------------
+| epoch              | 46                  |
+| stats_g/mean       | 0.84540766          |
+| stats_g/std        | 0.10253652          |
+| stats_o/mean       | 0.2043946           |
+| stats_o/std        | 0.0971337           |
+| test/episode       | 940.0               |
+| test/mean_Q        | -17.014217          |
+| test/success_rate  | 0.47500000000000003 |
+| train/episode      | 4700.0              |
+| train/success_rate | 0.355               |
+--------------------------------------------
+------------------------------------
+| epoch              | 47          |
+| stats_g/mean       | 0.8453675   |
+| stats_g/std        | 0.102712475 |
+| stats_o/mean       | 0.2043545   |
+| stats_o/std        | 0.098104805 |
+| test/episode       | 960.0       |
+| test/mean_Q        | -19.9536    |
+| test/success_rate  | 0.5         |
+| train/episode      | 4800.0      |
+| train/success_rate | 0.305       |
+------------------------------------
+------------------------------------
+| epoch              | 48          |
+| stats_g/mean       | 0.845341    |
+| stats_g/std        | 0.10297074  |
+| stats_o/mean       | 0.20443088  |
+| stats_o/std        | 0.099091336 |
+| test/episode       | 980.0       |
+| test/mean_Q        | -14.313007  |
+| test/success_rate  | 0.5         |
+| train/episode      | 4900.0      |
+| train/success_rate | 0.36        |
+------------------------------------
+------------------------------------
+| epoch              | 49          |
+| stats_g/mean       | 0.8452766   |
+| stats_g/std        | 0.103183664 |
+| stats_o/mean       | 0.20433488  |
+| stats_o/std        | 0.10016613  |
+| test/episode       | 1000.0      |
+| test/mean_Q        | -21.083902  |
+| test/success_rate  | 0.425       |
+| train/episode      | 5000.0      |
+| train/success_rate | 0.345       |
+------------------------------------
+--------------------------------------------
+| epoch              | 50                  |
+| stats_g/mean       | 0.8452647           |
+| stats_g/std        | 0.10330365          |
+| stats_o/mean       | 0.20429493          |
+| stats_o/std        | 0.10126781          |
+| test/episode       | 1020.0              |
+| test/mean_Q        | -20.762066          |
+| test/success_rate  | 0.32499999999999996 |
+| train/episode      | 5100.0              |
+| train/success_rate | 0.315               |
+--------------------------------------------
+Saving periodic policy to pptest500/policy_50.pkl ...
+------------------------------------
+| epoch              | 51          |
+| stats_g/mean       | 0.8450945   |
+| stats_g/std        | 0.10355095  |
+| stats_o/mean       | 0.20434736  |
+| stats_o/std        | 0.102286614 |
+| test/episode       | 1040.0      |
+| test/mean_Q        | -21.077652  |
+| test/success_rate  | 0.45        |
+| train/episode      | 5200.0      |
+| train/success_rate | 0.38        |
+------------------------------------
+--------------------------------------------
+| epoch              | 52                  |
+| stats_g/mean       | 0.84495574          |
+| stats_g/std        | 0.10387882          |
+| stats_o/mean       | 0.2044027           |
+| stats_o/std        | 0.103524454         |
+| test/episode       | 1060.0              |
+| test/mean_Q        | -21.110497          |
+| test/success_rate  | 0.4                 |
+| train/episode      | 5300.0              |
+| train/success_rate | 0.33499999999999996 |
+--------------------------------------------
+-----------------------------------
+| epoch              | 53         |
+| stats_g/mean       | 0.84480715 |
+| stats_g/std        | 0.10392357 |
+| stats_o/mean       | 0.2044382  |
+| stats_o/std        | 0.1045047  |
+| test/episode       | 1080.0     |
+| test/mean_Q        | -12.728022 |
+| test/success_rate  | 0.675      |
+| train/episode      | 5400.0     |
+| train/success_rate | 0.405      |
+-----------------------------------
+New best success rate: 0.675. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 54          |
+| stats_g/mean       | 0.84473896  |
+| stats_g/std        | 0.10378587  |
+| stats_o/mean       | 0.20447409  |
+| stats_o/std        | 0.105066925 |
+| test/episode       | 1100.0      |
+| test/mean_Q        | -15.990103  |
+| test/success_rate  | 0.55        |
+| train/episode      | 5500.0      |
+| train/success_rate | 0.425       |
+------------------------------------
+-----------------------------------
+| epoch              | 55         |
+| stats_g/mean       | 0.84489805 |
+| stats_g/std        | 0.10383532 |
+| stats_o/mean       | 0.20456156 |
+| stats_o/std        | 0.10559905 |
+| test/episode       | 1120.0     |
+| test/mean_Q        | -15.821989 |
+| test/success_rate  | 0.5        |
+| train/episode      | 5600.0     |
+| train/success_rate | 0.375      |
+-----------------------------------
+Saving periodic policy to pptest500/policy_55.pkl ...
+-------------------------------------------
+| epoch              | 56                 |
+| stats_g/mean       | 0.84486514         |
+| stats_g/std        | 0.103929035        |
+| stats_o/mean       | 0.20450021         |
+| stats_o/std        | 0.10638353         |
+| test/episode       | 1140.0             |
+| test/mean_Q        | -13.027716         |
+| test/success_rate  | 0.6499999999999999 |
+| train/episode      | 5700.0             |
+| train/success_rate | 0.395              |
+-------------------------------------------
+------------------------------------
+| epoch              | 57          |
+| stats_g/mean       | 0.84483814  |
+| stats_g/std        | 0.104041316 |
+| stats_o/mean       | 0.20450431  |
+| stats_o/std        | 0.106914885 |
+| test/episode       | 1160.0      |
+| test/mean_Q        | -17.787498  |
+| test/success_rate  | 0.525       |
+| train/episode      | 5800.0      |
+| train/success_rate | 0.36        |
+------------------------------------
+--------------------------------------------
+| epoch              | 58                  |
+| stats_g/mean       | 0.84490806          |
+| stats_g/std        | 0.104061075         |
+| stats_o/mean       | 0.204506            |
+| stats_o/std        | 0.10742388          |
+| test/episode       | 1180.0              |
+| test/mean_Q        | -13.790343          |
+| test/success_rate  | 0.6                 |
+| train/episode      | 5900.0              |
+| train/success_rate | 0.41500000000000004 |
+--------------------------------------------
+-----------------------------------
+| epoch              | 59         |
+| stats_g/mean       | 0.84503216 |
+| stats_g/std        | 0.10405447 |
+| stats_o/mean       | 0.2045547  |
+| stats_o/std        | 0.10797384 |
+| test/episode       | 1200.0     |
+| test/mean_Q        | -15.687407 |
+| test/success_rate  | 0.525      |
+| train/episode      | 6000.0     |
+| train/success_rate | 0.44       |
+-----------------------------------
+------------------------------------
+| epoch              | 60          |
+| stats_g/mean       | 0.84506553  |
+| stats_g/std        | 0.10410378  |
+| stats_o/mean       | 0.20464794  |
+| stats_o/std        | 0.108414955 |
+| test/episode       | 1220.0      |
+| test/mean_Q        | -12.900855  |
+| test/success_rate  | 0.625       |
+| train/episode      | 6100.0      |
+| train/success_rate | 0.405       |
+------------------------------------
+Saving periodic policy to pptest500/policy_60.pkl ...
+--------------------------------------------
+| epoch              | 61                  |
+| stats_g/mean       | 0.8451372           |
+| stats_g/std        | 0.10429645          |
+| stats_o/mean       | 0.20468935          |
+| stats_o/std        | 0.1088134           |
+| test/episode       | 1240.0              |
+| test/mean_Q        | -12.325345          |
+| test/success_rate  | 0.6499999999999999  |
+| train/episode      | 6200.0              |
+| train/success_rate | 0.44999999999999996 |
+--------------------------------------------
+-------------------------------------------
+| epoch              | 62                 |
+| stats_g/mean       | 0.84525114         |
+| stats_g/std        | 0.1042834          |
+| stats_o/mean       | 0.20468806         |
+| stats_o/std        | 0.10924294         |
+| test/episode       | 1260.0             |
+| test/mean_Q        | -11.078516         |
+| test/success_rate  | 0.7250000000000001 |
+| train/episode      | 6300.0             |
+| train/success_rate | 0.44               |
+-------------------------------------------
+New best success rate: 0.7250000000000001. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 63         |
+| stats_g/mean       | 0.845254   |
+| stats_g/std        | 0.1044381  |
+| stats_o/mean       | 0.20463163 |
+| stats_o/std        | 0.10979907 |
+| test/episode       | 1280.0     |
+| test/mean_Q        | -7.2597494 |
+| test/success_rate  | 0.825      |
+| train/episode      | 6400.0     |
+| train/success_rate | 0.44       |
+-----------------------------------
+New best success rate: 0.825. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 64         |
+| stats_g/mean       | 0.8452559  |
+| stats_g/std        | 0.10440552 |
+| stats_o/mean       | 0.20465325 |
+| stats_o/std        | 0.11007851 |
+| test/episode       | 1300.0     |
+| test/mean_Q        | -11.080303 |
+| test/success_rate  | 0.625      |
+| train/episode      | 6500.0     |
+| train/success_rate | 0.395      |
+-----------------------------------
+-------------------------------------------
+| epoch              | 65                 |
+| stats_g/mean       | 0.8452468          |
+| stats_g/std        | 0.104635775        |
+| stats_o/mean       | 0.20461594         |
+| stats_o/std        | 0.1105612          |
+| test/episode       | 1320.0             |
+| test/mean_Q        | -14.435308         |
+| test/success_rate  | 0.6000000000000001 |
+| train/episode      | 6600.0             |
+| train/success_rate | 0.37               |
+-------------------------------------------
+Saving periodic policy to pptest500/policy_65.pkl ...
+--------------------------------------------
+| epoch              | 66                  |
+| stats_g/mean       | 0.8452806           |
+| stats_g/std        | 0.10478293          |
+| stats_o/mean       | 0.20464732          |
+| stats_o/std        | 0.111123465         |
+| test/episode       | 1340.0              |
+| test/mean_Q        | -10.910929          |
+| test/success_rate  | 0.575               |
+| train/episode      | 6700.0              |
+| train/success_rate | 0.44499999999999995 |
+--------------------------------------------
+--------------------------------------------
+| epoch              | 67                  |
+| stats_g/mean       | 0.8452704           |
+| stats_g/std        | 0.105226524         |
+| stats_o/mean       | 0.2046431           |
+| stats_o/std        | 0.11169663          |
+| test/episode       | 1360.0              |
+| test/mean_Q        | -13.658472          |
+| test/success_rate  | 0.55                |
+| train/episode      | 6800.0              |
+| train/success_rate | 0.45999999999999996 |
+--------------------------------------------
+--------------------------------------------
+| epoch              | 68                  |
+| stats_g/mean       | 0.8452237           |
+| stats_g/std        | 0.10545597          |
+| stats_o/mean       | 0.20461237          |
+| stats_o/std        | 0.11207537          |
+| test/episode       | 1380.0              |
+| test/mean_Q        | -11.323105          |
+| test/success_rate  | 0.625               |
+| train/episode      | 6900.0              |
+| train/success_rate | 0.45499999999999996 |
+--------------------------------------------
+------------------------------------
+| epoch              | 69          |
+| stats_g/mean       | 0.8452135   |
+| stats_g/std        | 0.10575601  |
+| stats_o/mean       | 0.20464557  |
+| stats_o/std        | 0.112464085 |
+| test/episode       | 1400.0      |
+| test/mean_Q        | -10.56316   |
+| test/success_rate  | 0.7         |
+| train/episode      | 7000.0      |
+| train/success_rate | 0.485       |
+------------------------------------
+------------------------------------
+| epoch              | 70          |
+| stats_g/mean       | 0.8451402   |
+| stats_g/std        | 0.10587608  |
+| stats_o/mean       | 0.20464896  |
+| stats_o/std        | 0.112837076 |
+| test/episode       | 1420.0      |
+| test/mean_Q        | -12.125352  |
+| test/success_rate  | 0.6         |
+| train/episode      | 7100.0      |
+| train/success_rate | 0.48        |
+------------------------------------
+Saving periodic policy to pptest500/policy_70.pkl ...
+------------------------------------
+| epoch              | 71          |
+| stats_g/mean       | 0.8451912   |
+| stats_g/std        | 0.106015116 |
+| stats_o/mean       | 0.20467357  |
+| stats_o/std        | 0.113200895 |
+| test/episode       | 1440.0      |
+| test/mean_Q        | -8.5020275  |
+| test/success_rate  | 0.65        |
+| train/episode      | 7200.0      |
+| train/success_rate | 0.515       |
+------------------------------------
+------------------------------------
+| epoch              | 72          |
+| stats_g/mean       | 0.84520036  |
+| stats_g/std        | 0.105920136 |
+| stats_o/mean       | 0.2046661   |
+| stats_o/std        | 0.113231555 |
+| test/episode       | 1460.0      |
+| test/mean_Q        | -7.7541285  |
+| test/success_rate  | 0.7         |
+| train/episode      | 7300.0      |
+| train/success_rate | 0.43        |
+------------------------------------
+------------------------------------
+| epoch              | 73          |
+| stats_g/mean       | 0.84510535  |
+| stats_g/std        | 0.10606924  |
+| stats_o/mean       | 0.20463625  |
+| stats_o/std        | 0.113431826 |
+| test/episode       | 1480.0      |
+| test/mean_Q        | -7.6959457  |
+| test/success_rate  | 0.625       |
+| train/episode      | 7400.0      |
+| train/success_rate | 0.5         |
+------------------------------------
+------------------------------------
+| epoch              | 74          |
+| stats_g/mean       | 0.845069    |
+| stats_g/std        | 0.106107414 |
+| stats_o/mean       | 0.20461783  |
+| stats_o/std        | 0.11357631  |
+| test/episode       | 1500.0      |
+| test/mean_Q        | -5.9313307  |
+| test/success_rate  | 0.725       |
+| train/episode      | 7500.0      |
+| train/success_rate | 0.495       |
+------------------------------------
+------------------------------------
+| epoch              | 75          |
+| stats_g/mean       | 0.8450673   |
+| stats_g/std        | 0.10598571  |
+| stats_o/mean       | 0.20461825  |
+| stats_o/std        | 0.113692015 |
+| test/episode       | 1520.0      |
+| test/mean_Q        | -7.3575487  |
+| test/success_rate  | 0.75        |
+| train/episode      | 7600.0      |
+| train/success_rate | 0.5         |
+------------------------------------
+Saving periodic policy to pptest500/policy_75.pkl ...
+-----------------------------------
+| epoch              | 76         |
+| stats_g/mean       | 0.84504366 |
+| stats_g/std        | 0.10606862 |
+| stats_o/mean       | 0.20460191 |
+| stats_o/std        | 0.11401773 |
+| test/episode       | 1540.0     |
+| test/mean_Q        | -7.331677  |
+| test/success_rate  | 0.675      |
+| train/episode      | 7700.0     |
+| train/success_rate | 0.44       |
+-----------------------------------
+-------------------------------------------
+| epoch              | 77                 |
+| stats_g/mean       | 0.8450002          |
+| stats_g/std        | 0.106216066        |
+| stats_o/mean       | 0.20458063         |
+| stats_o/std        | 0.11426216         |
+| test/episode       | 1560.0             |
+| test/mean_Q        | -6.2438            |
+| test/success_rate  | 0.7749999999999999 |
+| train/episode      | 7800.0             |
+| train/success_rate | 0.495              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 78         |
+| stats_g/mean       | 0.8450477  |
+| stats_g/std        | 0.10634297 |
+| stats_o/mean       | 0.20461275 |
+| stats_o/std        | 0.11450053 |
+| test/episode       | 1580.0     |
+| test/mean_Q        | -8.3821335 |
+| test/success_rate  | 0.7        |
+| train/episode      | 7900.0     |
+| train/success_rate | 0.49       |
+-----------------------------------
+------------------------------------
+| epoch              | 79          |
+| stats_g/mean       | 0.8450899   |
+| stats_g/std        | 0.106434636 |
+| stats_o/mean       | 0.20457043  |
+| stats_o/std        | 0.11475467  |
+| test/episode       | 1600.0      |
+| test/mean_Q        | -7.1352367  |
+| test/success_rate  | 0.7         |
+| train/episode      | 8000.0      |
+| train/success_rate | 0.53        |
+------------------------------------
+------------------------------------
+| epoch              | 80          |
+| stats_g/mean       | 0.84498554  |
+| stats_g/std        | 0.106619954 |
+| stats_o/mean       | 0.20453592  |
+| stats_o/std        | 0.114969365 |
+| test/episode       | 1620.0      |
+| test/mean_Q        | -5.136673   |
+| test/success_rate  | 0.825       |
+| train/episode      | 8100.0      |
+| train/success_rate | 0.55        |
+------------------------------------
+New best success rate: 0.825. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_80.pkl ...
+--------------------------------------------
+| epoch              | 81                  |
+| stats_g/mean       | 0.8449688           |
+| stats_g/std        | 0.10677365          |
+| stats_o/mean       | 0.20444182          |
+| stats_o/std        | 0.11512337          |
+| test/episode       | 1640.0              |
+| test/mean_Q        | -5.980733           |
+| test/success_rate  | 0.75                |
+| train/episode      | 8200.0              |
+| train/success_rate | 0.45999999999999996 |
+--------------------------------------------
+------------------------------------
+| epoch              | 82          |
+| stats_g/mean       | 0.84498876  |
+| stats_g/std        | 0.106759556 |
+| stats_o/mean       | 0.2044849   |
+| stats_o/std        | 0.11529347  |
+| test/episode       | 1660.0      |
+| test/mean_Q        | -4.725085   |
+| test/success_rate  | 0.75        |
+| train/episode      | 8300.0      |
+| train/success_rate | 0.52        |
+------------------------------------
+-----------------------------------
+| epoch              | 83         |
+| stats_g/mean       | 0.8450873  |
+| stats_g/std        | 0.10673652 |
+| stats_o/mean       | 0.20442572 |
+| stats_o/std        | 0.11534947 |
+| test/episode       | 1680.0     |
+| test/mean_Q        | -4.4431925 |
+| test/success_rate  | 0.775      |
+| train/episode      | 8400.0     |
+| train/success_rate | 0.565      |
+-----------------------------------
+-----------------------------------
+| epoch              | 84         |
+| stats_g/mean       | 0.84514934 |
+| stats_g/std        | 0.10677988 |
+| stats_o/mean       | 0.20439242 |
+| stats_o/std        | 0.11532505 |
+| test/episode       | 1700.0     |
+| test/mean_Q        | -6.073405  |
+| test/success_rate  | 0.675      |
+| train/episode      | 8500.0     |
+| train/success_rate | 0.5        |
+-----------------------------------
+-------------------------------------------
+| epoch              | 85                 |
+| stats_g/mean       | 0.8451864          |
+| stats_g/std        | 0.10678935         |
+| stats_o/mean       | 0.2043166          |
+| stats_o/std        | 0.11543109         |
+| test/episode       | 1720.0             |
+| test/mean_Q        | -3.521336          |
+| test/success_rate  | 0.8                |
+| train/episode      | 8600.0             |
+| train/success_rate | 0.5449999999999999 |
+-------------------------------------------
+Saving periodic policy to pptest500/policy_85.pkl ...
+-------------------------------------------
+| epoch              | 86                 |
+| stats_g/mean       | 0.84530526         |
+| stats_g/std        | 0.106725514        |
+| stats_o/mean       | 0.20427006         |
+| stats_o/std        | 0.11543419         |
+| test/episode       | 1740.0             |
+| test/mean_Q        | -4.588176          |
+| test/success_rate  | 0.775              |
+| train/episode      | 8700.0             |
+| train/success_rate | 0.5700000000000001 |
+-------------------------------------------
+-----------------------------------
+| epoch              | 87         |
+| stats_g/mean       | 0.84535056 |
+| stats_g/std        | 0.10669815 |
+| stats_o/mean       | 0.20426534 |
+| stats_o/std        | 0.1154101  |
+| test/episode       | 1760.0     |
+| test/mean_Q        | -2.4240727 |
+| test/success_rate  | 0.85       |
+| train/episode      | 8800.0     |
+| train/success_rate | 0.56       |
+-----------------------------------
+New best success rate: 0.85. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 88         |
+| stats_g/mean       | 0.84540087 |
+| stats_g/std        | 0.10678375 |
+| stats_o/mean       | 0.20427209 |
+| stats_o/std        | 0.11542978 |
+| test/episode       | 1780.0     |
+| test/mean_Q        | -3.1946225 |
+| test/success_rate  | 0.825      |
+| train/episode      | 8900.0     |
+| train/success_rate | 0.525      |
+-----------------------------------
+------------------------------------
+| epoch              | 89          |
+| stats_g/mean       | 0.8454888   |
+| stats_g/std        | 0.106897496 |
+| stats_o/mean       | 0.20428076  |
+| stats_o/std        | 0.11549141  |
+| test/episode       | 1800.0      |
+| test/mean_Q        | -3.3508832  |
+| test/success_rate  | 0.825       |
+| train/episode      | 9000.0      |
+| train/success_rate | 0.48        |
+------------------------------------
+------------------------------------
+| epoch              | 90          |
+| stats_g/mean       | 0.8455258   |
+| stats_g/std        | 0.106920004 |
+| stats_o/mean       | 0.20424664  |
+| stats_o/std        | 0.11553087  |
+| test/episode       | 1820.0      |
+| test/mean_Q        | -3.9229007  |
+| test/success_rate  | 0.675       |
+| train/episode      | 9100.0      |
+| train/success_rate | 0.565       |
+------------------------------------
+Saving periodic policy to pptest500/policy_90.pkl ...
+-------------------------------------------
+| epoch              | 91                 |
+| stats_g/mean       | 0.84557587         |
+| stats_g/std        | 0.10693123         |
+| stats_o/mean       | 0.20424956         |
+| stats_o/std        | 0.1154789          |
+| test/episode       | 1840.0             |
+| test/mean_Q        | -2.5255456         |
+| test/success_rate  | 0.825              |
+| train/episode      | 9200.0             |
+| train/success_rate | 0.5349999999999999 |
+-------------------------------------------
+-----------------------------------
+| epoch              | 92         |
+| stats_g/mean       | 0.845639   |
+| stats_g/std        | 0.1069831  |
+| stats_o/mean       | 0.20427963 |
+| stats_o/std        | 0.11552452 |
+| test/episode       | 1860.0     |
+| test/mean_Q        | -3.3664613 |
+| test/success_rate  | 0.75       |
+| train/episode      | 9300.0     |
+| train/success_rate | 0.55       |
+-----------------------------------
+-----------------------------------
+| epoch              | 93         |
+| stats_g/mean       | 0.8457048  |
+| stats_g/std        | 0.10695153 |
+| stats_o/mean       | 0.20428547 |
+| stats_o/std        | 0.11553913 |
+| test/episode       | 1880.0     |
+| test/mean_Q        | -1.9172542 |
+| test/success_rate  | 0.875      |
+| train/episode      | 9400.0     |
+| train/success_rate | 0.635      |
+-----------------------------------
+New best success rate: 0.875. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 94          |
+| stats_g/mean       | 0.84575444  |
+| stats_g/std        | 0.106954515 |
+| stats_o/mean       | 0.20426008  |
+| stats_o/std        | 0.11550663  |
+| test/episode       | 1900.0      |
+| test/mean_Q        | -3.2784278  |
+| test/success_rate  | 0.75        |
+| train/episode      | 9500.0      |
+| train/success_rate | 0.565       |
+------------------------------------
+-----------------------------------
+| epoch              | 95         |
+| stats_g/mean       | 0.8458245  |
+| stats_g/std        | 0.10690252 |
+| stats_o/mean       | 0.20428163 |
+| stats_o/std        | 0.11554184 |
+| test/episode       | 1920.0     |
+| test/mean_Q        | -2.474783  |
+| test/success_rate  | 0.8        |
+| train/episode      | 9600.0     |
+| train/success_rate | 0.57       |
+-----------------------------------
+Saving periodic policy to pptest500/policy_95.pkl ...
+-----------------------------------
+| epoch              | 96         |
+| stats_g/mean       | 0.845917   |
+| stats_g/std        | 0.10689601 |
+| stats_o/mean       | 0.20430279 |
+| stats_o/std        | 0.11556153 |
+| test/episode       | 1940.0     |
+| test/mean_Q        | -2.9890828 |
+| test/success_rate  | 0.8        |
+| train/episode      | 9700.0     |
+| train/success_rate | 0.49       |
+-----------------------------------
+-------------------------------------------
+| epoch              | 97                 |
+| stats_g/mean       | 0.846034           |
+| stats_g/std        | 0.106942765        |
+| stats_o/mean       | 0.20432915         |
+| stats_o/std        | 0.11556628         |
+| test/episode       | 1960.0             |
+| test/mean_Q        | -2.1207862         |
+| test/success_rate  | 0.8500000000000001 |
+| train/episode      | 9800.0             |
+| train/success_rate | 0.505              |
+-------------------------------------------
+------------------------------------
+| epoch              | 98          |
+| stats_g/mean       | 0.8461094   |
+| stats_g/std        | 0.10692499  |
+| stats_o/mean       | 0.20435135  |
+| stats_o/std        | 0.115507476 |
+| test/episode       | 1980.0      |
+| test/mean_Q        | -1.6980982  |
+| test/success_rate  | 0.875       |
+| train/episode      | 9900.0      |
+| train/success_rate | 0.605       |
+------------------------------------
+New best success rate: 0.875. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 99          |
+| stats_g/mean       | 0.8461588   |
+| stats_g/std        | 0.10692277  |
+| stats_o/mean       | 0.20437069  |
+| stats_o/std        | 0.115476266 |
+| test/episode       | 2000.0      |
+| test/mean_Q        | -2.3171556  |
+| test/success_rate  | 0.85        |
+| train/episode      | 10000.0     |
+| train/success_rate | 0.565       |
+------------------------------------
+------------------------------------
+| epoch              | 100         |
+| stats_g/mean       | 0.84619904  |
+| stats_g/std        | 0.10689419  |
+| stats_o/mean       | 0.20439173  |
+| stats_o/std        | 0.115395695 |
+| test/episode       | 2020.0      |
+| test/mean_Q        | -1.1619711  |
+| test/success_rate  | 0.95        |
+| train/episode      | 10100.0     |
+| train/success_rate | 0.61        |
+------------------------------------
+New best success rate: 0.95. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_100.pkl ...
+-------------------------------------------
+| epoch              | 101                |
+| stats_g/mean       | 0.8462195          |
+| stats_g/std        | 0.10694328         |
+| stats_o/mean       | 0.20439105         |
+| stats_o/std        | 0.115354024        |
+| test/episode       | 2040.0             |
+| test/mean_Q        | -1.3565435         |
+| test/success_rate  | 0.9                |
+| train/episode      | 10200.0            |
+| train/success_rate | 0.5900000000000001 |
+-------------------------------------------
+-----------------------------------
+| epoch              | 102        |
+| stats_g/mean       | 0.8463122  |
+| stats_g/std        | 0.10694126 |
+| stats_o/mean       | 0.20440693 |
+| stats_o/std        | 0.11528067 |
+| test/episode       | 2060.0     |
+| test/mean_Q        | -1.878346  |
+| test/success_rate  | 0.825      |
+| train/episode      | 10300.0    |
+| train/success_rate | 0.585      |
+-----------------------------------
+-------------------------------------------
+| epoch              | 103                |
+| stats_g/mean       | 0.8464114          |
+| stats_g/std        | 0.10694695         |
+| stats_o/mean       | 0.20442964         |
+| stats_o/std        | 0.11532491         |
+| test/episode       | 2080.0             |
+| test/mean_Q        | -1.8427067         |
+| test/success_rate  | 0.825              |
+| train/episode      | 10400.0            |
+| train/success_rate | 0.5549999999999999 |
+-------------------------------------------
+------------------------------------
+| epoch              | 104         |
+| stats_g/mean       | 0.84647685  |
+| stats_g/std        | 0.107039034 |
+| stats_o/mean       | 0.20448156  |
+| stats_o/std        | 0.11536482  |
+| test/episode       | 2100.0      |
+| test/mean_Q        | -1.4287764  |
+| test/success_rate  | 0.875       |
+| train/episode      | 10500.0     |
+| train/success_rate | 0.565       |
+------------------------------------
+-----------------------------------
+| epoch              | 105        |
+| stats_g/mean       | 0.84650177 |
+| stats_g/std        | 0.10708945 |
+| stats_o/mean       | 0.20449995 |
+| stats_o/std        | 0.11539494 |
+| test/episode       | 2120.0     |
+| test/mean_Q        | -1.3351936 |
+| test/success_rate  | 0.85       |
+| train/episode      | 10600.0    |
+| train/success_rate | 0.56       |
+-----------------------------------
+Saving periodic policy to pptest500/policy_105.pkl ...
+-----------------------------------
+| epoch              | 106        |
+| stats_g/mean       | 0.84652734 |
+| stats_g/std        | 0.10704874 |
+| stats_o/mean       | 0.20450196 |
+| stats_o/std        | 0.11533859 |
+| test/episode       | 2140.0     |
+| test/mean_Q        | -1.5401671 |
+| test/success_rate  | 0.85       |
+| train/episode      | 10700.0    |
+| train/success_rate | 0.6        |
+-----------------------------------
+-------------------------------------------
+| epoch              | 107                |
+| stats_g/mean       | 0.84665066         |
+| stats_g/std        | 0.10713321         |
+| stats_o/mean       | 0.20451792         |
+| stats_o/std        | 0.115350254        |
+| test/episode       | 2160.0             |
+| test/mean_Q        | -1.6436646         |
+| test/success_rate  | 0.8500000000000001 |
+| train/episode      | 10800.0            |
+| train/success_rate | 0.555              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 108        |
+| stats_g/mean       | 0.84674627 |
+| stats_g/std        | 0.10714817 |
+| stats_o/mean       | 0.20458448 |
+| stats_o/std        | 0.11536626 |
+| test/episode       | 2180.0     |
+| test/mean_Q        | -2.3156114 |
+| test/success_rate  | 0.85       |
+| train/episode      | 10900.0    |
+| train/success_rate | 0.615      |
+-----------------------------------
+------------------------------------
+| epoch              | 109         |
+| stats_g/mean       | 0.84679085  |
+| stats_g/std        | 0.10717952  |
+| stats_o/mean       | 0.20457232  |
+| stats_o/std        | 0.115350254 |
+| test/episode       | 2200.0      |
+| test/mean_Q        | -2.067183   |
+| test/success_rate  | 0.85        |
+| train/episode      | 11000.0     |
+| train/success_rate | 0.625       |
+------------------------------------
+-----------------------------------
+| epoch              | 110        |
+| stats_g/mean       | 0.84689254 |
+| stats_g/std        | 0.10714215 |
+| stats_o/mean       | 0.20461148 |
+| stats_o/std        | 0.11533806 |
+| test/episode       | 2220.0     |
+| test/mean_Q        | -1.0166868 |
+| test/success_rate  | 0.925      |
+| train/episode      | 11100.0    |
+| train/success_rate | 0.595      |
+-----------------------------------
+Saving periodic policy to pptest500/policy_110.pkl ...
+------------------------------------
+| epoch              | 111         |
+| stats_g/mean       | 0.84695673  |
+| stats_g/std        | 0.107219614 |
+| stats_o/mean       | 0.20461997  |
+| stats_o/std        | 0.1153631   |
+| test/episode       | 2240.0      |
+| test/mean_Q        | -1.1030202  |
+| test/success_rate  | 0.925       |
+| train/episode      | 11200.0     |
+| train/success_rate | 0.575       |
+------------------------------------
+-------------------------------------------
+| epoch              | 112                |
+| stats_g/mean       | 0.8470761          |
+| stats_g/std        | 0.10722651         |
+| stats_o/mean       | 0.20465083         |
+| stats_o/std        | 0.11529092         |
+| test/episode       | 2260.0             |
+| test/mean_Q        | -1.1122432         |
+| test/success_rate  | 0.925              |
+| train/episode      | 11300.0            |
+| train/success_rate | 0.5700000000000001 |
+-------------------------------------------
+------------------------------------
+| epoch              | 113         |
+| stats_g/mean       | 0.8471505   |
+| stats_g/std        | 0.10716767  |
+| stats_o/mean       | 0.2046769   |
+| stats_o/std        | 0.11522376  |
+| test/episode       | 2280.0      |
+| test/mean_Q        | -0.86619693 |
+| test/success_rate  | 0.975       |
+| train/episode      | 11400.0     |
+| train/success_rate | 0.605       |
+------------------------------------
+New best success rate: 0.975. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 114         |
+| stats_g/mean       | 0.84713966  |
+| stats_g/std        | 0.10716829  |
+| stats_o/mean       | 0.20469974  |
+| stats_o/std        | 0.115218766 |
+| test/episode       | 2300.0      |
+| test/mean_Q        | -1.6387103  |
+| test/success_rate  | 0.875       |
+| train/episode      | 11500.0     |
+| train/success_rate | 0.62        |
+------------------------------------
+------------------------------------
+| epoch              | 115         |
+| stats_g/mean       | 0.8471768   |
+| stats_g/std        | 0.1071525   |
+| stats_o/mean       | 0.2047273   |
+| stats_o/std        | 0.115144566 |
+| test/episode       | 2320.0      |
+| test/mean_Q        | -1.0778551  |
+| test/success_rate  | 0.95        |
+| train/episode      | 11600.0     |
+| train/success_rate | 0.615       |
+------------------------------------
+Saving periodic policy to pptest500/policy_115.pkl ...
+-----------------------------------
+| epoch              | 116        |
+| stats_g/mean       | 0.84719396 |
+| stats_g/std        | 0.10710006 |
+| stats_o/mean       | 0.20477776 |
+| stats_o/std        | 0.11510125 |
+| test/episode       | 2340.0     |
+| test/mean_Q        | -1.0711437 |
+| test/success_rate  | 0.95       |
+| train/episode      | 11700.0    |
+| train/success_rate | 0.63       |
+-----------------------------------
+------------------------------------
+| epoch              | 117         |
+| stats_g/mean       | 0.8472207   |
+| stats_g/std        | 0.10712558  |
+| stats_o/mean       | 0.2048211   |
+| stats_o/std        | 0.115052775 |
+| test/episode       | 2360.0      |
+| test/mean_Q        | -1.3513196  |
+| test/success_rate  | 0.875       |
+| train/episode      | 11800.0     |
+| train/success_rate | 0.61        |
+------------------------------------
+-----------------------------------
+| epoch              | 118        |
+| stats_g/mean       | 0.8473126  |
+| stats_g/std        | 0.107249   |
+| stats_o/mean       | 0.20484854 |
+| stats_o/std        | 0.11510589 |
+| test/episode       | 2380.0     |
+| test/mean_Q        | -1.4110317 |
+| test/success_rate  | 0.875      |
+| train/episode      | 11900.0    |
+| train/success_rate | 0.57       |
+-----------------------------------
+-------------------------------------------
+| epoch              | 119                |
+| stats_g/mean       | 0.8473838          |
+| stats_g/std        | 0.10724882         |
+| stats_o/mean       | 0.20487422         |
+| stats_o/std        | 0.11509573         |
+| test/episode       | 2400.0             |
+| test/mean_Q        | -1.100525          |
+| test/success_rate  | 0.8999999999999999 |
+| train/episode      | 12000.0            |
+| train/success_rate | 0.63               |
+-------------------------------------------
+-----------------------------------
+| epoch              | 120        |
+| stats_g/mean       | 0.8474439  |
+| stats_g/std        | 0.10735899 |
+| stats_o/mean       | 0.20490856 |
+| stats_o/std        | 0.11504349 |
+| test/episode       | 2420.0     |
+| test/mean_Q        | -1.4110817 |
+| test/success_rate  | 0.875      |
+| train/episode      | 12100.0    |
+| train/success_rate | 0.515      |
+-----------------------------------
+Saving periodic policy to pptest500/policy_120.pkl ...
+-------------------------------------------
+| epoch              | 121                |
+| stats_g/mean       | 0.84752417         |
+| stats_g/std        | 0.10739567         |
+| stats_o/mean       | 0.20491865         |
+| stats_o/std        | 0.115032285        |
+| test/episode       | 2440.0             |
+| test/mean_Q        | -1.0536027         |
+| test/success_rate  | 0.95               |
+| train/episode      | 12200.0            |
+| train/success_rate | 0.5700000000000001 |
+-------------------------------------------
+-------------------------------------------
+| epoch              | 122                |
+| stats_g/mean       | 0.8475594          |
+| stats_g/std        | 0.10739239         |
+| stats_o/mean       | 0.2049325          |
+| stats_o/std        | 0.11499919         |
+| test/episode       | 2460.0             |
+| test/mean_Q        | -1.1964408         |
+| test/success_rate  | 0.95               |
+| train/episode      | 12300.0            |
+| train/success_rate | 0.5800000000000001 |
+-------------------------------------------
+------------------------------------
+| epoch              | 123         |
+| stats_g/mean       | 0.8476546   |
+| stats_g/std        | 0.10741403  |
+| stats_o/mean       | 0.2049544   |
+| stats_o/std        | 0.115024544 |
+| test/episode       | 2480.0      |
+| test/mean_Q        | -1.3034737  |
+| test/success_rate  | 0.925       |
+| train/episode      | 12400.0     |
+| train/success_rate | 0.63        |
+------------------------------------
+-------------------------------------------
+| epoch              | 124                |
+| stats_g/mean       | 0.8477025          |
+| stats_g/std        | 0.10744246         |
+| stats_o/mean       | 0.20495178         |
+| stats_o/std        | 0.11501146         |
+| test/episode       | 2500.0             |
+| test/mean_Q        | -1.4323404         |
+| test/success_rate  | 0.8999999999999999 |
+| train/episode      | 12500.0            |
+| train/success_rate | 0.575              |
+-------------------------------------------
+-------------------------------------------
+| epoch              | 125                |
+| stats_g/mean       | 0.8477905          |
+| stats_g/std        | 0.10742382         |
+| stats_o/mean       | 0.20498091         |
+| stats_o/std        | 0.11498478         |
+| test/episode       | 2520.0             |
+| test/mean_Q        | -1.3620007         |
+| test/success_rate  | 0.8500000000000001 |
+| train/episode      | 12600.0            |
+| train/success_rate | 0.58               |
+-------------------------------------------
+Saving periodic policy to pptest500/policy_125.pkl ...
+------------------------------------
+| epoch              | 126         |
+| stats_g/mean       | 0.8478625   |
+| stats_g/std        | 0.10745161  |
+| stats_o/mean       | 0.20499787  |
+| stats_o/std        | 0.11500881  |
+| test/episode       | 2540.0      |
+| test/mean_Q        | -0.88645744 |
+| test/success_rate  | 0.975       |
+| train/episode      | 12700.0     |
+| train/success_rate | 0.615       |
+------------------------------------
+New best success rate: 0.975. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 127        |
+| stats_g/mean       | 0.8479323  |
+| stats_g/std        | 0.10743899 |
+| stats_o/mean       | 0.20502715 |
+| stats_o/std        | 0.11497263 |
+| test/episode       | 2560.0     |
+| test/mean_Q        | -1.70776   |
+| test/success_rate  | 0.975      |
+| train/episode      | 12800.0    |
+| train/success_rate | 0.565      |
+-----------------------------------
+New best success rate: 0.975. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 128        |
+| stats_g/mean       | 0.84797186 |
+| stats_g/std        | 0.10744386 |
+| stats_o/mean       | 0.20504998 |
+| stats_o/std        | 0.11491159 |
+| test/episode       | 2580.0     |
+| test/mean_Q        | -1.4018564 |
+| test/success_rate  | 0.875      |
+| train/episode      | 12900.0    |
+| train/success_rate | 0.61       |
+-----------------------------------
+------------------------------------
+| epoch              | 129         |
+| stats_g/mean       | 0.8480193   |
+| stats_g/std        | 0.107496105 |
+| stats_o/mean       | 0.20507132  |
+| stats_o/std        | 0.11491207  |
+| test/episode       | 2600.0      |
+| test/mean_Q        | -1.172596   |
+| test/success_rate  | 0.95        |
+| train/episode      | 13000.0     |
+| train/success_rate | 0.61        |
+------------------------------------
+-------------------------------------------
+| epoch              | 130                |
+| stats_g/mean       | 0.8480707          |
+| stats_g/std        | 0.107490934        |
+| stats_o/mean       | 0.20506711         |
+| stats_o/std        | 0.11486372         |
+| test/episode       | 2620.0             |
+| test/mean_Q        | -1.0267088         |
+| test/success_rate  | 0.975              |
+| train/episode      | 13100.0            |
+| train/success_rate | 0.5449999999999999 |
+-------------------------------------------
+New best success rate: 0.975. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_130.pkl ...
+-----------------------------------
+| epoch              | 131        |
+| stats_g/mean       | 0.8481261  |
+| stats_g/std        | 0.10756221 |
+| stats_o/mean       | 0.2050724  |
+| stats_o/std        | 0.11487419 |
+| test/episode       | 2640.0     |
+| test/mean_Q        | -0.7810587 |
+| test/success_rate  | 0.95       |
+| train/episode      | 13200.0    |
+| train/success_rate | 0.575      |
+-----------------------------------
+-------------------------------------------
+| epoch              | 132                |
+| stats_g/mean       | 0.8481769          |
+| stats_g/std        | 0.10752812         |
+| stats_o/mean       | 0.2051008          |
+| stats_o/std        | 0.11484482         |
+| test/episode       | 2660.0             |
+| test/mean_Q        | -1.0061784         |
+| test/success_rate  | 0.8999999999999999 |
+| train/episode      | 13300.0            |
+| train/success_rate | 0.585              |
+-------------------------------------------
+------------------------------------
+| epoch              | 133         |
+| stats_g/mean       | 0.84824795  |
+| stats_g/std        | 0.107591875 |
+| stats_o/mean       | 0.20513012  |
+| stats_o/std        | 0.11490543  |
+| test/episode       | 2680.0      |
+| test/mean_Q        | -1.0097646  |
+| test/success_rate  | 0.9         |
+| train/episode      | 13400.0     |
+| train/success_rate | 0.535       |
+------------------------------------
+-------------------------------------------
+| epoch              | 134                |
+| stats_g/mean       | 0.8483288          |
+| stats_g/std        | 0.10760331         |
+| stats_o/mean       | 0.20513175         |
+| stats_o/std        | 0.11487608         |
+| test/episode       | 2700.0             |
+| test/mean_Q        | -1.3121566         |
+| test/success_rate  | 0.8999999999999999 |
+| train/episode      | 13500.0            |
+| train/success_rate | 0.64               |
+-------------------------------------------
+------------------------------------
+| epoch              | 135         |
+| stats_g/mean       | 0.84834677  |
+| stats_g/std        | 0.1076985   |
+| stats_o/mean       | 0.20515662  |
+| stats_o/std        | 0.114927724 |
+| test/episode       | 2720.0      |
+| test/mean_Q        | -0.8791245  |
+| test/success_rate  | 1.0         |
+| train/episode      | 13600.0     |
+| train/success_rate | 0.58        |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_135.pkl ...
+------------------------------------
+| epoch              | 136         |
+| stats_g/mean       | 0.84836084  |
+| stats_g/std        | 0.10774509  |
+| stats_o/mean       | 0.2051766   |
+| stats_o/std        | 0.114959754 |
+| test/episode       | 2740.0      |
+| test/mean_Q        | -0.9462743  |
+| test/success_rate  | 1.0         |
+| train/episode      | 13700.0     |
+| train/success_rate | 0.565       |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 137         |
+| stats_g/mean       | 0.848427    |
+| stats_g/std        | 0.10774541  |
+| stats_o/mean       | 0.20519985  |
+| stats_o/std        | 0.114993334 |
+| test/episode       | 2760.0      |
+| test/mean_Q        | -1.0200629  |
+| test/success_rate  | 0.975       |
+| train/episode      | 13800.0     |
+| train/success_rate | 0.55        |
+------------------------------------
+------------------------------------
+| epoch              | 138         |
+| stats_g/mean       | 0.848432    |
+| stats_g/std        | 0.10771543  |
+| stats_o/mean       | 0.20520224  |
+| stats_o/std        | 0.114970356 |
+| test/episode       | 2780.0      |
+| test/mean_Q        | -1.0640543  |
+| test/success_rate  | 0.95        |
+| train/episode      | 13900.0     |
+| train/success_rate | 0.55        |
+------------------------------------
+------------------------------------
+| epoch              | 139         |
+| stats_g/mean       | 0.8484502   |
+| stats_g/std        | 0.107657254 |
+| stats_o/mean       | 0.20522624  |
+| stats_o/std        | 0.11492991  |
+| test/episode       | 2800.0      |
+| test/mean_Q        | -0.7626252  |
+| test/success_rate  | 1.0         |
+| train/episode      | 14000.0     |
+| train/success_rate | 0.605       |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 140         |
+| stats_g/mean       | 0.8484854   |
+| stats_g/std        | 0.107631646 |
+| stats_o/mean       | 0.20523353  |
+| stats_o/std        | 0.114951074 |
+| test/episode       | 2820.0      |
+| test/mean_Q        | -1.0558345  |
+| test/success_rate  | 0.95        |
+| train/episode      | 14100.0     |
+| train/success_rate | 0.6         |
+------------------------------------
+Saving periodic policy to pptest500/policy_140.pkl ...
+-----------------------------------
+| epoch              | 141        |
+| stats_g/mean       | 0.8485184  |
+| stats_g/std        | 0.1076281  |
+| stats_o/mean       | 0.20523995 |
+| stats_o/std        | 0.11492565 |
+| test/episode       | 2840.0     |
+| test/mean_Q        | -1.0871556 |
+| test/success_rate  | 0.95       |
+| train/episode      | 14200.0    |
+| train/success_rate | 0.55       |
+-----------------------------------
+------------------------------------
+| epoch              | 142         |
+| stats_g/mean       | 0.8486063   |
+| stats_g/std        | 0.107616685 |
+| stats_o/mean       | 0.20526567  |
+| stats_o/std        | 0.11495712  |
+| test/episode       | 2860.0      |
+| test/mean_Q        | -1.1572332  |
+| test/success_rate  | 0.875       |
+| train/episode      | 14300.0     |
+| train/success_rate | 0.56        |
+------------------------------------
+------------------------------------
+| epoch              | 143         |
+| stats_g/mean       | 0.8486502   |
+| stats_g/std        | 0.107649796 |
+| stats_o/mean       | 0.20528847  |
+| stats_o/std        | 0.114988945 |
+| test/episode       | 2880.0      |
+| test/mean_Q        | -1.1157697  |
+| test/success_rate  | 0.95        |
+| train/episode      | 14400.0     |
+| train/success_rate | 0.565       |
+------------------------------------
+-----------------------------------
+| epoch              | 144        |
+| stats_g/mean       | 0.84869987 |
+| stats_g/std        | 0.10766954 |
+| stats_o/mean       | 0.20528704 |
+| stats_o/std        | 0.11499806 |
+| test/episode       | 2900.0     |
+| test/mean_Q        | -1.2781806 |
+| test/success_rate  | 0.925      |
+| train/episode      | 14500.0    |
+| train/success_rate | 0.575      |
+-----------------------------------
+------------------------------------
+| epoch              | 145         |
+| stats_g/mean       | 0.8487566   |
+| stats_g/std        | 0.107643776 |
+| stats_o/mean       | 0.20531422  |
+| stats_o/std        | 0.11492793  |
+| test/episode       | 2920.0      |
+| test/mean_Q        | -1.2243551  |
+| test/success_rate  | 0.975       |
+| train/episode      | 14600.0     |
+| train/success_rate | 0.6         |
+------------------------------------
+Saving periodic policy to pptest500/policy_145.pkl ...
+-----------------------------------
+| epoch              | 146        |
+| stats_g/mean       | 0.84877163 |
+| stats_g/std        | 0.10757407 |
+| stats_o/mean       | 0.20533518 |
+| stats_o/std        | 0.11487629 |
+| test/episode       | 2940.0     |
+| test/mean_Q        | -1.1155262 |
+| test/success_rate  | 0.95       |
+| train/episode      | 14700.0    |
+| train/success_rate | 0.685      |
+-----------------------------------
+------------------------------------
+| epoch              | 147         |
+| stats_g/mean       | 0.84882766  |
+| stats_g/std        | 0.1075266   |
+| stats_o/mean       | 0.20535688  |
+| stats_o/std        | 0.11484649  |
+| test/episode       | 2960.0      |
+| test/mean_Q        | -0.94052917 |
+| test/success_rate  | 0.95        |
+| train/episode      | 14800.0     |
+| train/success_rate | 0.56        |
+------------------------------------
+------------------------------------
+| epoch              | 148         |
+| stats_g/mean       | 0.84888715  |
+| stats_g/std        | 0.10754073  |
+| stats_o/mean       | 0.20536537  |
+| stats_o/std        | 0.114829205 |
+| test/episode       | 2980.0      |
+| test/mean_Q        | -1.0953176  |
+| test/success_rate  | 0.975       |
+| train/episode      | 14900.0     |
+| train/success_rate | 0.54        |
+------------------------------------
+-------------------------------------------
+| epoch              | 149                |
+| stats_g/mean       | 0.8488975          |
+| stats_g/std        | 0.10752431         |
+| stats_o/mean       | 0.20537956         |
+| stats_o/std        | 0.114851475        |
+| test/episode       | 3000.0             |
+| test/mean_Q        | -1.0892187         |
+| test/success_rate  | 0.975              |
+| train/episode      | 15000.0            |
+| train/success_rate | 0.5549999999999999 |
+-------------------------------------------
+------------------------------------
+| epoch              | 150         |
+| stats_g/mean       | 0.848952    |
+| stats_g/std        | 0.107571006 |
+| stats_o/mean       | 0.20541397  |
+| stats_o/std        | 0.11486712  |
+| test/episode       | 3020.0      |
+| test/mean_Q        | -0.98185116 |
+| test/success_rate  | 0.95        |
+| train/episode      | 15100.0     |
+| train/success_rate | 0.56        |
+------------------------------------
+Saving periodic policy to pptest500/policy_150.pkl ...
+-----------------------------------
+| epoch              | 151        |
+| stats_g/mean       | 0.8489972  |
+| stats_g/std        | 0.1075624  |
+| stats_o/mean       | 0.20544556 |
+| stats_o/std        | 0.11482812 |
+| test/episode       | 3040.0     |
+| test/mean_Q        | -1.0502406 |
+| test/success_rate  | 0.925      |
+| train/episode      | 15200.0    |
+| train/success_rate | 0.575      |
+-----------------------------------
+------------------------------------
+| epoch              | 152         |
+| stats_g/mean       | 0.84904957  |
+| stats_g/std        | 0.10757324  |
+| stats_o/mean       | 0.2054732   |
+| stats_o/std        | 0.114833176 |
+| test/episode       | 3060.0      |
+| test/mean_Q        | -0.94274074 |
+| test/success_rate  | 0.95        |
+| train/episode      | 15300.0     |
+| train/success_rate | 0.53        |
+------------------------------------
+------------------------------------
+| epoch              | 153         |
+| stats_g/mean       | 0.8491039   |
+| stats_g/std        | 0.107550256 |
+| stats_o/mean       | 0.20549427  |
+| stats_o/std        | 0.11484525  |
+| test/episode       | 3080.0      |
+| test/mean_Q        | -0.83577764 |
+| test/success_rate  | 1.0         |
+| train/episode      | 15400.0     |
+| train/success_rate | 0.505       |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+-----------------------------------
+| epoch              | 154        |
+| stats_g/mean       | 0.84911805 |
+| stats_g/std        | 0.10753772 |
+| stats_o/mean       | 0.2055213  |
+| stats_o/std        | 0.11482328 |
+| test/episode       | 3100.0     |
+| test/mean_Q        | -1.1571678 |
+| test/success_rate  | 0.95       |
+| train/episode      | 15500.0    |
+| train/success_rate | 0.585      |
+-----------------------------------
+------------------------------------
+| epoch              | 155         |
+| stats_g/mean       | 0.8491406   |
+| stats_g/std        | 0.107515156 |
+| stats_o/mean       | 0.20555913  |
+| stats_o/std        | 0.114795774 |
+| test/episode       | 3120.0      |
+| test/mean_Q        | -0.91897285 |
+| test/success_rate  | 1.0         |
+| train/episode      | 15600.0     |
+| train/success_rate | 0.565       |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_155.pkl ...
+-------------------------------------------
+| epoch              | 156                |
+| stats_g/mean       | 0.84914595         |
+| stats_g/std        | 0.107488036        |
+| stats_o/mean       | 0.20559004         |
+| stats_o/std        | 0.114756525        |
+| test/episode       | 3140.0             |
+| test/mean_Q        | -1.338363          |
+| test/success_rate  | 0.95               |
+| train/episode      | 15700.0            |
+| train/success_rate | 0.6000000000000001 |
+-------------------------------------------
+-----------------------------------
+| epoch              | 157        |
+| stats_g/mean       | 0.8491904  |
+| stats_g/std        | 0.10746905 |
+| stats_o/mean       | 0.20560545 |
+| stats_o/std        | 0.11475732 |
+| test/episode       | 3160.0     |
+| test/mean_Q        | -0.966805  |
+| test/success_rate  | 0.975      |
+| train/episode      | 15800.0    |
+| train/success_rate | 0.565      |
+-----------------------------------
+-----------------------------------
+| epoch              | 158        |
+| stats_g/mean       | 0.84921855 |
+| stats_g/std        | 0.10740409 |
+| stats_o/mean       | 0.20563503 |
+| stats_o/std        | 0.11475396 |
+| test/episode       | 3180.0     |
+| test/mean_Q        | -1.0266479 |
+| test/success_rate  | 0.925      |
+| train/episode      | 15900.0    |
+| train/success_rate | 0.49       |
+-----------------------------------
+------------------------------------
+| epoch              | 159         |
+| stats_g/mean       | 0.8492677   |
+| stats_g/std        | 0.10739738  |
+| stats_o/mean       | 0.2056655   |
+| stats_o/std        | 0.114797026 |
+| test/episode       | 3200.0      |
+| test/mean_Q        | -1.2939625  |
+| test/success_rate  | 0.975       |
+| train/episode      | 16000.0     |
+| train/success_rate | 0.51        |
+------------------------------------
+------------------------------------
+| epoch              | 160         |
+| stats_g/mean       | 0.8492923   |
+| stats_g/std        | 0.10736227  |
+| stats_o/mean       | 0.20570257  |
+| stats_o/std        | 0.114778854 |
+| test/episode       | 3220.0      |
+| test/mean_Q        | -1.0980157  |
+| test/success_rate  | 0.925       |
+| train/episode      | 16100.0     |
+| train/success_rate | 0.575       |
+------------------------------------
+Saving periodic policy to pptest500/policy_160.pkl ...
+-----------------------------------
+| epoch              | 161        |
+| stats_g/mean       | 0.8493001  |
+| stats_g/std        | 0.10734243 |
+| stats_o/mean       | 0.2057222  |
+| stats_o/std        | 0.11474259 |
+| test/episode       | 3240.0     |
+| test/mean_Q        | -1.0594065 |
+| test/success_rate  | 0.975      |
+| train/episode      | 16200.0    |
+| train/success_rate | 0.545      |
+-----------------------------------
+-------------------------------------------
+| epoch              | 162                |
+| stats_g/mean       | 0.84931827         |
+| stats_g/std        | 0.10732473         |
+| stats_o/mean       | 0.20573582         |
+| stats_o/std        | 0.11471629         |
+| test/episode       | 3260.0             |
+| test/mean_Q        | -1.0831339         |
+| test/success_rate  | 1.0                |
+| train/episode      | 16300.0            |
+| train/success_rate | 0.5800000000000001 |
+-------------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+-------------------------------------------
+| epoch              | 163                |
+| stats_g/mean       | 0.8493641          |
+| stats_g/std        | 0.107289515        |
+| stats_o/mean       | 0.2057465          |
+| stats_o/std        | 0.114651956        |
+| test/episode       | 3280.0             |
+| test/mean_Q        | -0.99887633        |
+| test/success_rate  | 0.95               |
+| train/episode      | 16400.0            |
+| train/success_rate | 0.5700000000000001 |
+-------------------------------------------
+-----------------------------------
+| epoch              | 164        |
+| stats_g/mean       | 0.8493955  |
+| stats_g/std        | 0.10723766 |
+| stats_o/mean       | 0.20575768 |
+| stats_o/std        | 0.1146403  |
+| test/episode       | 3300.0     |
+| test/mean_Q        | -1.1096661 |
+| test/success_rate  | 0.925      |
+| train/episode      | 16500.0    |
+| train/success_rate | 0.525      |
+-----------------------------------
+------------------------------------
+| epoch              | 165         |
+| stats_g/mean       | 0.84944147  |
+| stats_g/std        | 0.10729104  |
+| stats_o/mean       | 0.20577064  |
+| stats_o/std        | 0.114649735 |
+| test/episode       | 3320.0      |
+| test/mean_Q        | -0.82477486 |
+| test/success_rate  | 0.925       |
+| train/episode      | 16600.0     |
+| train/success_rate | 0.59        |
+------------------------------------
+Saving periodic policy to pptest500/policy_165.pkl ...
+-------------------------------------------
+| epoch              | 166                |
+| stats_g/mean       | 0.84950256         |
+| stats_g/std        | 0.107248195        |
+| stats_o/mean       | 0.20577183         |
+| stats_o/std        | 0.11462972         |
+| test/episode       | 3340.0             |
+| test/mean_Q        | -1.1493781         |
+| test/success_rate  | 0.8999999999999999 |
+| train/episode      | 16700.0            |
+| train/success_rate | 0.585              |
+-------------------------------------------
+-----------------------------------
+| epoch              | 167        |
+| stats_g/mean       | 0.8495586  |
+| stats_g/std        | 0.10718573 |
+| stats_o/mean       | 0.20579638 |
+| stats_o/std        | 0.11459296 |
+| test/episode       | 3360.0     |
+| test/mean_Q        | -1.2105868 |
+| test/success_rate  | 0.95       |
+| train/episode      | 16800.0    |
+| train/success_rate | 0.49       |
+-----------------------------------
+------------------------------------
+| epoch              | 168         |
+| stats_g/mean       | 0.8496232   |
+| stats_g/std        | 0.10718892  |
+| stats_o/mean       | 0.20582062  |
+| stats_o/std        | 0.114580065 |
+| test/episode       | 3380.0      |
+| test/mean_Q        | -0.82448304 |
+| test/success_rate  | 0.95        |
+| train/episode      | 16900.0     |
+| train/success_rate | 0.575       |
+------------------------------------
+-----------------------------------
+| epoch              | 169        |
+| stats_g/mean       | 0.84965354 |
+| stats_g/std        | 0.10721681 |
+| stats_o/mean       | 0.20583355 |
+| stats_o/std        | 0.11460659 |
+| test/episode       | 3400.0     |
+| test/mean_Q        | -1.1474376 |
+| test/success_rate  | 0.975      |
+| train/episode      | 17000.0    |
+| train/success_rate | 0.515      |
+-----------------------------------
+-----------------------------------
+| epoch              | 170        |
+| stats_g/mean       | 0.8497019  |
+| stats_g/std        | 0.10721376 |
+| stats_o/mean       | 0.20587406 |
+| stats_o/std        | 0.11457567 |
+| test/episode       | 3420.0     |
+| test/mean_Q        | -1.1464472 |
+| test/success_rate  | 0.875      |
+| train/episode      | 17100.0    |
+| train/success_rate | 0.505      |
+-----------------------------------
+Saving periodic policy to pptest500/policy_170.pkl ...
+-----------------------------------
+| epoch              | 171        |
+| stats_g/mean       | 0.84973574 |
+| stats_g/std        | 0.10720259 |
+| stats_o/mean       | 0.20587744 |
+| stats_o/std        | 0.11453008 |
+| test/episode       | 3440.0     |
+| test/mean_Q        | -1.063124  |
+| test/success_rate  | 0.95       |
+| train/episode      | 17200.0    |
+| train/success_rate | 0.58       |
+-----------------------------------
+-----------------------------------
+| epoch              | 172        |
+| stats_g/mean       | 0.84978515 |
+| stats_g/std        | 0.10716928 |
+| stats_o/mean       | 0.20589194 |
+| stats_o/std        | 0.11450326 |
+| test/episode       | 3460.0     |
+| test/mean_Q        | -1.0609698 |
+| test/success_rate  | 0.95       |
+| train/episode      | 17300.0    |
+| train/success_rate | 0.585      |
+-----------------------------------
+------------------------------------
+| epoch              | 173         |
+| stats_g/mean       | 0.8498082   |
+| stats_g/std        | 0.107138425 |
+| stats_o/mean       | 0.2059014   |
+| stats_o/std        | 0.11447784  |
+| test/episode       | 3480.0      |
+| test/mean_Q        | -1.0229493  |
+| test/success_rate  | 0.975       |
+| train/episode      | 17400.0     |
+| train/success_rate | 0.555       |
+------------------------------------
+------------------------------------
+| epoch              | 174         |
+| stats_g/mean       | 0.84984714  |
+| stats_g/std        | 0.107114196 |
+| stats_o/mean       | 0.20590709  |
+| stats_o/std        | 0.11444592  |
+| test/episode       | 3500.0      |
+| test/mean_Q        | -0.98798543 |
+| test/success_rate  | 0.95        |
+| train/episode      | 17500.0     |
+| train/success_rate | 0.52        |
+------------------------------------
+------------------------------------
+| epoch              | 175         |
+| stats_g/mean       | 0.8498606   |
+| stats_g/std        | 0.10708946  |
+| stats_o/mean       | 0.20590638  |
+| stats_o/std        | 0.11439596  |
+| test/episode       | 3520.0      |
+| test/mean_Q        | -0.95846474 |
+| test/success_rate  | 0.975       |
+| train/episode      | 17600.0     |
+| train/success_rate | 0.545       |
+------------------------------------
+Saving periodic policy to pptest500/policy_175.pkl ...
+------------------------------------
+| epoch              | 176         |
+| stats_g/mean       | 0.84991217  |
+| stats_g/std        | 0.1070985   |
+| stats_o/mean       | 0.20591597  |
+| stats_o/std        | 0.114391126 |
+| test/episode       | 3540.0      |
+| test/mean_Q        | -0.85187113 |
+| test/success_rate  | 1.0         |
+| train/episode      | 17700.0     |
+| train/success_rate | 0.5         |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 177         |
+| stats_g/mean       | 0.84996724  |
+| stats_g/std        | 0.107114434 |
+| stats_o/mean       | 0.20592982  |
+| stats_o/std        | 0.11437682  |
+| test/episode       | 3560.0      |
+| test/mean_Q        | -1.0361574  |
+| test/success_rate  | 0.975       |
+| train/episode      | 17800.0     |
+| train/success_rate | 0.515       |
+------------------------------------
+-----------------------------------
+| epoch              | 178        |
+| stats_g/mean       | 0.8499792  |
+| stats_g/std        | 0.1070799  |
+| stats_o/mean       | 0.20595361 |
+| stats_o/std        | 0.11432289 |
+| test/episode       | 3580.0     |
+| test/mean_Q        | -1.3082759 |
+| test/success_rate  | 0.925      |
+| train/episode      | 17900.0    |
+| train/success_rate | 0.525      |
+-----------------------------------
+-----------------------------------
+| epoch              | 179        |
+| stats_g/mean       | 0.85002923 |
+| stats_g/std        | 0.10704323 |
+| stats_o/mean       | 0.20597383 |
+| stats_o/std        | 0.11430135 |
+| test/episode       | 3600.0     |
+| test/mean_Q        | -1.1076336 |
+| test/success_rate  | 0.975      |
+| train/episode      | 18000.0    |
+| train/success_rate | 0.54       |
+-----------------------------------
+-----------------------------------
+| epoch              | 180        |
+| stats_g/mean       | 0.8500612  |
+| stats_g/std        | 0.1070049  |
+| stats_o/mean       | 0.205982   |
+| stats_o/std        | 0.1142932  |
+| test/episode       | 3620.0     |
+| test/mean_Q        | -1.2190981 |
+| test/success_rate  | 0.95       |
+| train/episode      | 18100.0    |
+| train/success_rate | 0.56       |
+-----------------------------------
+Saving periodic policy to pptest500/policy_180.pkl ...
+-------------------------------------------
+| epoch              | 181                |
+| stats_g/mean       | 0.85012835         |
+| stats_g/std        | 0.107021004        |
+| stats_o/mean       | 0.20600048         |
+| stats_o/std        | 0.11426775         |
+| test/episode       | 3640.0             |
+| test/mean_Q        | -1.1041869         |
+| test/success_rate  | 0.975              |
+| train/episode      | 18200.0            |
+| train/success_rate | 0.5449999999999999 |
+-------------------------------------------
+------------------------------------
+| epoch              | 182         |
+| stats_g/mean       | 0.8501522   |
+| stats_g/std        | 0.106951445 |
+| stats_o/mean       | 0.20602249  |
+| stats_o/std        | 0.114247866 |
+| test/episode       | 3660.0      |
+| test/mean_Q        | -0.947572   |
+| test/success_rate  | 0.975       |
+| train/episode      | 18300.0     |
+| train/success_rate | 0.55        |
+------------------------------------
+-------------------------------------------
+| epoch              | 183                |
+| stats_g/mean       | 0.8502099          |
+| stats_g/std        | 0.1070131          |
+| stats_o/mean       | 0.20603397         |
+| stats_o/std        | 0.11427617         |
+| test/episode       | 3680.0             |
+| test/mean_Q        | -0.99465644        |
+| test/success_rate  | 0.95               |
+| train/episode      | 18400.0            |
+| train/success_rate | 0.5449999999999999 |
+-------------------------------------------
+--------------------------------------------
+| epoch              | 184                 |
+| stats_g/mean       | 0.8502264           |
+| stats_g/std        | 0.107023604         |
+| stats_o/mean       | 0.20605491          |
+| stats_o/std        | 0.114305295         |
+| test/episode       | 3700.0              |
+| test/mean_Q        | -1.1382606          |
+| test/success_rate  | 0.925               |
+| train/episode      | 18500.0             |
+| train/success_rate | 0.44999999999999996 |
+--------------------------------------------
+------------------------------------
+| epoch              | 185         |
+| stats_g/mean       | 0.850241    |
+| stats_g/std        | 0.10704026  |
+| stats_o/mean       | 0.20605987  |
+| stats_o/std        | 0.114314884 |
+| test/episode       | 3720.0      |
+| test/mean_Q        | -1.1099582  |
+| test/success_rate  | 0.95        |
+| train/episode      | 18600.0     |
+| train/success_rate | 0.475       |
+------------------------------------
+Saving periodic policy to pptest500/policy_185.pkl ...
+-----------------------------------
+| epoch              | 186        |
+| stats_g/mean       | 0.8502808  |
+| stats_g/std        | 0.10702749 |
+| stats_o/mean       | 0.20609006 |
+| stats_o/std        | 0.1142734  |
+| test/episode       | 3740.0     |
+| test/mean_Q        | -1.1831982 |
+| test/success_rate  | 0.975      |
+| train/episode      | 18700.0    |
+| train/success_rate | 0.58       |
+-----------------------------------
+-----------------------------------
+| epoch              | 187        |
+| stats_g/mean       | 0.8502708  |
+| stats_g/std        | 0.10701867 |
+| stats_o/mean       | 0.20609023 |
+| stats_o/std        | 0.11427848 |
+| test/episode       | 3760.0     |
+| test/mean_Q        | -0.9714291 |
+| test/success_rate  | 0.925      |
+| train/episode      | 18800.0    |
+| train/success_rate | 0.5        |
+-----------------------------------
+------------------------------------
+| epoch              | 188         |
+| stats_g/mean       | 0.8503129   |
+| stats_g/std        | 0.1070256   |
+| stats_o/mean       | 0.20609955  |
+| stats_o/std        | 0.114243366 |
+| test/episode       | 3780.0      |
+| test/mean_Q        | -1.0152168  |
+| test/success_rate  | 0.95        |
+| train/episode      | 18900.0     |
+| train/success_rate | 0.56        |
+------------------------------------
+-----------------------------------
+| epoch              | 189        |
+| stats_g/mean       | 0.85032934 |
+| stats_g/std        | 0.10704038 |
+| stats_o/mean       | 0.20610742 |
+| stats_o/std        | 0.11421516 |
+| test/episode       | 3800.0     |
+| test/mean_Q        | -0.9723056 |
+| test/success_rate  | 0.975      |
+| train/episode      | 19000.0    |
+| train/success_rate | 0.495      |
+-----------------------------------
+------------------------------------
+| epoch              | 190         |
+| stats_g/mean       | 0.85035104  |
+| stats_g/std        | 0.10705467  |
+| stats_o/mean       | 0.20613085  |
+| stats_o/std        | 0.114172354 |
+| test/episode       | 3820.0      |
+| test/mean_Q        | -1.0701702  |
+| test/success_rate  | 1.0         |
+| train/episode      | 19100.0     |
+| train/success_rate | 0.54        |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+Saving periodic policy to pptest500/policy_190.pkl ...
+------------------------------------
+| epoch              | 191         |
+| stats_g/mean       | 0.850373    |
+| stats_g/std        | 0.107066475 |
+| stats_o/mean       | 0.20612466  |
+| stats_o/std        | 0.114193276 |
+| test/episode       | 3840.0      |
+| test/mean_Q        | -1.1779509  |
+| test/success_rate  | 0.95        |
+| train/episode      | 19200.0     |
+| train/success_rate | 0.535       |
+------------------------------------
+------------------------------------
+| epoch              | 192         |
+| stats_g/mean       | 0.85039634  |
+| stats_g/std        | 0.10709196  |
+| stats_o/mean       | 0.20614146  |
+| stats_o/std        | 0.114190005 |
+| test/episode       | 3860.0      |
+| test/mean_Q        | -0.9543988  |
+| test/success_rate  | 0.975       |
+| train/episode      | 19300.0     |
+| train/success_rate | 0.54        |
+------------------------------------
+-----------------------------------
+| epoch              | 193        |
+| stats_g/mean       | 0.8503902  |
+| stats_g/std        | 0.1070941  |
+| stats_o/mean       | 0.20613961 |
+| stats_o/std        | 0.11418934 |
+| test/episode       | 3880.0     |
+| test/mean_Q        | -1.116842  |
+| test/success_rate  | 0.875      |
+| train/episode      | 19400.0    |
+| train/success_rate | 0.585      |
+-----------------------------------
+-----------------------------------
+| epoch              | 194        |
+| stats_g/mean       | 0.85041636 |
+| stats_g/std        | 0.10706518 |
+| stats_o/mean       | 0.20616417 |
+| stats_o/std        | 0.11416326 |
+| test/episode       | 3900.0     |
+| test/mean_Q        | -1.1823857 |
+| test/success_rate  | 0.925      |
+| train/episode      | 19500.0    |
+| train/success_rate | 0.575      |
+-----------------------------------
+-------------------------------------------
+| epoch              | 195                |
+| stats_g/mean       | 0.850463           |
+| stats_g/std        | 0.10701727         |
+| stats_o/mean       | 0.20617703         |
+| stats_o/std        | 0.11411157         |
+| test/episode       | 3920.0             |
+| test/mean_Q        | -0.96375746        |
+| test/success_rate  | 0.975              |
+| train/episode      | 19600.0            |
+| train/success_rate | 0.5549999999999999 |
+-------------------------------------------
+Saving periodic policy to pptest500/policy_195.pkl ...
+-----------------------------------
+| epoch              | 196        |
+| stats_g/mean       | 0.8505085  |
+| stats_g/std        | 0.1070187  |
+| stats_o/mean       | 0.20618972 |
+| stats_o/std        | 0.11410121 |
+| test/episode       | 3940.0     |
+| test/mean_Q        | -2.0113423 |
+| test/success_rate  | 0.95       |
+| train/episode      | 19700.0    |
+| train/success_rate | 0.545      |
+-----------------------------------
+------------------------------------
+| epoch              | 197         |
+| stats_g/mean       | 0.8505419   |
+| stats_g/std        | 0.107042365 |
+| stats_o/mean       | 0.20618324  |
+| stats_o/std        | 0.114101365 |
+| test/episode       | 3960.0      |
+| test/mean_Q        | -1.2207062  |
+| test/success_rate  | 0.9         |
+| train/episode      | 19800.0     |
+| train/success_rate | 0.5         |
+------------------------------------
+------------------------------------
+| epoch              | 198         |
+| stats_g/mean       | 0.85056466  |
+| stats_g/std        | 0.10703563  |
+| stats_o/mean       | 0.20619059  |
+| stats_o/std        | 0.114110686 |
+| test/episode       | 3980.0      |
+| test/mean_Q        | -0.99475706 |
+| test/success_rate  | 1.0         |
+| train/episode      | 19900.0     |
+| train/success_rate | 0.61        |
+------------------------------------
+New best success rate: 1.0. Saving policy to pptest500/policy_best.pkl ...
+------------------------------------
+| epoch              | 199         |
+| stats_g/mean       | 0.85059834  |
+| stats_g/std        | 0.10700631  |
+| stats_o/mean       | 0.20621222  |
+| stats_o/std        | 0.114098445 |
+| test/episode       | 4000.0      |
+| test/mean_Q        | -0.9627504  |
+| test/success_rate  | 0.975       |
+| train/episode      | 20000.0     |
+| train/success_rate | 0.495       |
+------------------------------------
