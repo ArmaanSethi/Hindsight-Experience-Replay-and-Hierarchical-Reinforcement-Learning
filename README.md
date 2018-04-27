@@ -34,7 +34,7 @@ https://youtu.be/pPzTOkPKF2o
 https://youtu.be/PcBb0IYE4F0
 https://youtu.be/7k19-bpJLTA
 
-###Code
+### Code
 I initially created my own implementation of DDPG, HER, and added HRL to it. 
 In order to evaluate it fairly I decided to use the baseline HER as the foundation to my method, and then adding changes to various places in order to implement HRL as well. 
 
