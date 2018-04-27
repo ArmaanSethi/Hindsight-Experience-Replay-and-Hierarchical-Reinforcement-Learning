@@ -1,5 +1,7 @@
 # Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Comp 781 Project
+https://github.com/ArmaanSethi/Comp-781-Project
+
 
 ## How to use Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Setup using OpenAI gyms. There are many tutorials online that will do a lot better than me.
@@ -41,6 +43,5 @@ In order to evaluate it fairly I decided to use the baseline HER as the foundati
 This allowed me to use their logger, which was very helpful in creating the graphs. 
 
 The code I modified are in baselines/baselines/herhrl/
-More specifically I modified the replay_buffer.py, rollout.py, her.py, ddpg.py, and actor_critic.py.
-I
 
+More specifically I modified replay_buffer.py, rollout.py, her.py, ddpg.py, and actor_critic.py.
