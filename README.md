@@ -1,7 +1,6 @@
 # Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Comp 781 Project
-https://github.com/ArmaanSethi/Comp-781-Project
-
+https://github.com/ArmaanSethi/Hindsight-Experience-Replay-and-Hierarchical-Reinforcement-Learning
 
 ## How to use Hindsight Experience Replay and Hierarchical Reinforcement Learning
 Setup using OpenAI gyms. There are many tutorials online that will do a lot better than me.
