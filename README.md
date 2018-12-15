@@ -32,9 +32,9 @@ python -m baselines.herhrl.experiment.train.py --num_cpu 2 --env_name FetchPush-
 ```
 
 ### Videos
-https://youtu.be/pPzTOkPKF2o
-https://youtu.be/PcBb0IYE4F0
-https://youtu.be/7k19-bpJLTA
+- https://youtu.be/pPzTOkPKF2o  
+- https://youtu.be/PcBb0IYE4F0  
+- https://youtu.be/7k19-bpJLTA  
 
 ### Code
 I initially created my own implementation of DDPG, HER, and added HRL to it. 
