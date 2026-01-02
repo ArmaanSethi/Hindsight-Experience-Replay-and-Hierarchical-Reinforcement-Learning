@@ -112,4 +112,5 @@ See [`docs/`](docs/) for the full project report and proposal.
 
 ---
 
-*COMP 781: Robotics — UNC Chapel Hill*
+*COMP 781: Robotics (Graduate) — UNC Chapel Hill*  
+*Completed as a sophomore undergraduate*
