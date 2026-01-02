@@ -53,6 +53,8 @@ For integration with the training loop, I modified files in [`baselines/baseline
 
 This aligns with the theoretical result that HRL's sample complexity advantage scales with O(H/k), where H is horizon length and k is the subgoal interval. When H ≈ k (simple tasks), the ratio approaches 1 and HRL reduces to flat RL. When H >> k (FetchSlide), hierarchical decomposition provides meaningful gains.
 
+**Compute constraints**: These experiments were run on a 4-CPU machine with 500 training epochs—significantly less than the 100+ CPUs and longer training runs used in the original HER research. With only 1 CPU, neither method exceeded 20% success on FetchSlide. The 70% result with HER+HRL suggests the hierarchical approach is particularly effective in resource-constrained settings.
+
 *Training curves in [`results/`](results/).*
 
 **Demo videos**: [FetchPush](https://youtu.be/pPzTOkPKF2o) | [PickAndPlace](https://youtu.be/PcBb0IYE4F0) | [Slide](https://youtu.be/7k19-bpJLTA)
