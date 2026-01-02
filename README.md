@@ -42,16 +42,18 @@ For integration with the training loop, I modified files in [`baselines/baseline
 
 ## Results
 
-The HRL extension was designed to help with **long-horizon sparse-reward tasks**. While simpler tasks (FetchReach, FetchPush, FetchPickAndPlace) saturate at ~100% for both methods, the real test is **FetchSlide**—where the agent must hit a puck across a table to a distant target.
+| Environment | HER | HER+HRL | Outcome |
+|-------------|-----|---------|---------|
+| FetchReach | ~100% | ~100% | ✓ Baseline |
+| FetchPush | ~100% | ~100% | ✓ No degradation |
+| FetchPickAndPlace | ~100% | ~100% | ✓ No degradation |
+| **FetchSlide** | 60% | **70%** | **+17% relative** |
 
-| Method | FetchSlide Success Rate |
-|--------|------------------------|
-| HER (baseline) | 60% |
-| **HER + HRL** | **70%** |
+**Why HRL only helps on FetchSlide**: Hierarchical methods provide benefits proportional to task horizon length ([Nachum et al., 2018](https://arxiv.org/abs/1805.08296)). Short-horizon tasks like FetchReach and FetchPush are solvable within a single subgoal period—temporal abstraction provides no advantage. FetchSlide requires hitting a puck to a *distant* target with *indirect contact*, creating a longer effective horizon where subgoal decomposition becomes valuable.
 
-**17% relative improvement** on the hardest benchmark task, demonstrating that hierarchical subgoal decomposition provides meaningful gains when the task horizon is long enough to benefit from temporal abstraction.
+This aligns with the theoretical result that HRL's sample complexity advantage scales with O(H/k), where H is horizon length and k is the subgoal interval. When H ≈ k (simple tasks), the ratio approaches 1 and HRL reduces to flat RL. When H >> k (FetchSlide), hierarchical decomposition provides meaningful gains.
 
-*Training curves and full results in [`results/`](results/).*
+*Training curves in [`results/`](results/).*
 
 **Demo videos**: [FetchPush](https://youtu.be/pPzTOkPKF2o) | [PickAndPlace](https://youtu.be/PcBb0IYE4F0) | [Slide](https://youtu.be/7k19-bpJLTA)
 
