@@ -42,16 +42,16 @@ For integration with the training loop, I modified files in [`baselines/baseline
 
 ## Results
 
-| Environment | HER Only | HER+HRL | Notes |
-|-------------|----------|---------|-------|
-| FetchReach | ~100% | ~100% | Solved in <3 epochs |
-| FetchPush | ~100% | ~100% | Both methods effective |
-| FetchPickAndPlace | ~100% | ~100% | ~200 epochs |
-| **FetchSlide** | **60%** | **70%** | HRL advantage on hardest task |
+The HRL extension was designed to help with **long-horizon sparse-reward tasks**. While simpler tasks (FetchReach, FetchPush, FetchPickAndPlace) saturate at ~100% for both methods, the real test is **FetchSlide**—where the agent must hit a puck across a table to a distant target.
 
-*FetchSlide is the most challenging environment—the agent must hit a puck to a distant target. HER+HRL shows a 10 percentage point improvement on this task.*
+| Method | FetchSlide Success Rate |
+|--------|------------------------|
+| HER (baseline) | 60% |
+| **HER + HRL** | **70%** |
 
-*Training curves in [`results/`](results/).*
+**17% relative improvement** on the hardest benchmark task, demonstrating that hierarchical subgoal decomposition provides meaningful gains when the task horizon is long enough to benefit from temporal abstraction.
+
+*Training curves and full results in [`results/`](results/).*
 
 **Demo videos**: [FetchPush](https://youtu.be/pPzTOkPKF2o) | [PickAndPlace](https://youtu.be/PcBb0IYE4F0) | [Slide](https://youtu.be/7k19-bpJLTA)
 
