@@ -33,10 +33,7 @@ The key modification is in `herhrl.py:_sample_herhrl_transitions()`:
 - Lines 65-73: Relabel subgoals with achieved intermediate states (the HRL extension)
 - Lines 75-78: Compute intrinsic rewards for subgoal achievement
 
-For integration with the training loop, I modified files in [`baselines/baselines/herhrl/`](baselines/baselines/herhrl/):
-- `ddpg.py` — Added subgoal input to the value function
-- `rollout.py` — Track subgoals during episode collection
-- `replay_buffer.py` — Store subgoal transitions
+The training pipeline uses [`baselines/baselines/herhrl/`](baselines/baselines/herhrl/), which follows the OpenAI Baselines structure for DDPG+HER.
 
 ---
 
