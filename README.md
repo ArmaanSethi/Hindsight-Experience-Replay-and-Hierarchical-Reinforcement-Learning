@@ -42,13 +42,16 @@ For integration with the training loop, I modified files in [`baselines/baseline
 
 ## Results
 
-| Environment | HER Only | HER+HRL | Improvement |
-|-------------|----------|---------|-------------|
-| FetchPush-v0 | 85% | 94% | +9% |
-| FetchPickAndPlace-v0 | 72% | 89% | +17% |
-| FetchSlide-v0 | 31% | 48% | +17% |
+| Environment | HER Only | HER+HRL | Notes |
+|-------------|----------|---------|-------|
+| FetchReach | ~100% | ~100% | Solved in <3 epochs |
+| FetchPush | ~100% | ~100% | Both methods effective |
+| FetchPickAndPlace | ~100% | ~100% | ~200 epochs |
+| **FetchSlide** | **60%** | **70%** | HRL advantage on hardest task |
 
-*Success rate after 200 epochs. Training curves in [`results/`](results/).*
+*FetchSlide is the most challenging environment—the agent must hit a puck to a distant target. HER+HRL shows a 10 percentage point improvement on this task.*
+
+*Training curves in [`results/`](results/).*
 
 **Demo videos**: [FetchPush](https://youtu.be/pPzTOkPKF2o) | [PickAndPlace](https://youtu.be/PcBb0IYE4F0) | [Slide](https://youtu.be/7k19-bpJLTA)
 
